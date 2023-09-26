@@ -30,8 +30,18 @@ h1 {
     font-size: 256px;
     font-weight: 800;
 }
-
-
+h2 {
+    font-size: 64px;
+    font-weight: 900;
+}
+.big-text-style {
+    font-size: 32px;
+    font-weight: 300;
+}
+.small-text-style {
+    font-size: 16px;
+    font-weight: 100;
+}
 
 
 header {
@@ -74,7 +84,6 @@ header {
     height: 100vh;
     margin-left: auto;
     margin-right: auto;
-    background-color: #060606;
 }
 .img-girl-hat {
     width: 369px;
@@ -130,4 +139,86 @@ header {
 
 .welcome-arrow img:hover {
     margin-bottom: -20px;
+}
+
+
+.questions {
+    background-color: #060606;
+    color: #E5E5E5;
+}
+.questions-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 840px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.questions-header h2 {
+    width: 620px;
+}
+.questions-text{
+    position: absolute;
+    width: 953px;
+    height: 689px;
+    top: 78px;
+    left: 88px;
+}
+.questions-text li{
+    list-style: none;
+}
+.questions-line {
+    position: absolute;
+}
+
+
+.q1 {
+    position: absolute;
+    left: 392px;
+}
+.q2 {
+    position: absolute;
+    top: 68px;
+}
+.q3 {
+    position: absolute;
+    top: 27px;
+    left: 524px;
+}
+.q4 {
+    position: absolute;
+    top: 99px;
+    left: 786px;
+}
+.q5 {
+    position: absolute;
+    top: 191px;
+    left: 262px;
+}
+.q6 {
+    position: absolute;
+    top: 500px;
+    left: 524px;
+}
+.q7 {
+    position: absolute;
+    top: 420px;
+    left: 866px;
+    width: 95px;
+}
+.q8 {
+    position: absolute;
+    top: 514px;
+}
+.q9 {
+    position: absolute;
+    top: 589px;
+    left: 655px;
+}
+.q10 {
+    position: absolute;
+    top: 648px;
+    left: 131px;
 }
