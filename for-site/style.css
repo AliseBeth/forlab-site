@@ -46,12 +46,17 @@ button {
     font-family: 'Overpass';
     font-size: 16px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 
 li{
     list-style: none;
 }
+a {
+    text-decoration: none;
+}
+
 
 
 
@@ -60,7 +65,7 @@ header {
 }
 .head {
     position: fixed;
-    z-index: 1;
+    z-index: 0;
     margin-left: auto;
     margin-right: auto;
     width: 95vw;
@@ -73,6 +78,8 @@ header {
 .project-logo {
     width: 174px;
     cursor: pointer;
+    opacity: 0.3;
+    transition: 0.5s;
 }
 .nav-for-burger {
     display: none;
@@ -82,7 +89,26 @@ header {
 }
 .burger {
     cursor: pointer;
+    opacity: 0.3;
+    transition: 0.5s;
 }
+
+.project-logo:hover {
+    opacity: 1;
+}
+.burger:hover {
+    opacity: 1;
+}
+
+.project-logo:active{
+    filter: invert(100%);
+    transition: 0.3s;
+}
+.burger:active{
+    filter: invert(100%);
+    transition: 0.3s;
+}
+
 
 
 
@@ -94,6 +120,7 @@ header {
 .welcome-content {
     width: 1024px;
     height: 100vh;
+    min-height: 840px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -137,7 +164,7 @@ header {
 }
 .welcome-arrow {
     position: absolute;
-    bottom: 20px;
+    bottom: 30px;
     display: flex;
     width: 1024px;
     justify-content: center;
@@ -146,13 +173,16 @@ header {
     cursor: pointer;
     width: 40px;
     padding: 20px;
-    transition: margin 1s;
+    transition: 1s;
 }
 
 .welcome-arrow img:hover {
     margin-bottom: -20px;
 }
-
+.welcome-arrow img:active{
+    filter: invert(100%);
+    transition: 0.3s;
+}
 
 
 
@@ -186,55 +216,82 @@ header {
     position: absolute;
 }
 
+.questions-text ul li {
+    cursor: pointer;
+    transition: 1s;
+}
+
 
 .questions-text ul :nth-child(1) {
     position: absolute;
     left: 392px;
+    filter: blur(2px);
 }
 .questions-text ul :nth-child(2) {
     position: absolute;
     top: 68px;
+    filter: blur(1.5px);
 }
 .questions-text ul :nth-child(3) {
     position: absolute;
     top: 27px;
     left: 524px;
+    filter: blur(1px);
 }
 .questions-text ul :nth-child(4) {
     position: absolute;
     top: 99px;
     left: 786px;
+    font-weight: 100;
+    filter: blur(1px);
 }
 .questions-text ul :nth-child(5) {
     position: absolute;
     top: 191px;
     left: 262px;
+    filter: blur(1px);
 }
 .questions-text ul :nth-child(6) {
     position: absolute;
     top: 500px;
     left: 524px;
+    filter: blur(2px);
 }
 .questions-text ul :nth-child(7) {
     position: absolute;
     top: 420px;
     left: 866px;
     width: 95px;
+    filter: blur(2px);
 }
 .questions-text ul :nth-child(8) {
     position: absolute;
     top: 514px;
+    filter: blur(1px);
 }
 .questions-text ul :nth-child(9) {
     position: absolute;
     top: 589px;
     left: 655px;
+    filter: blur(1.5px);
 }
 .questions-text ul :nth-child(10) {
     position: absolute;
     top: 648px;
     left: 131px;
 }
+.questions-text ul :nth-child(10) a{
+    font-size: 32px;
+    font-weight: 300;
+    width: 281px;
+    color: #E5E5E5;
+    filter: blur(0px);
+    left:0;
+}
+
+.questions-text li:hover {
+    filter: blur(0px);
+} 
 
 
 
@@ -295,4 +352,9 @@ header {
     padding: 12px 53px 10px;
     border: #E5E5E5 solid 3px;
     margin-top: 54px;
+    transition: 0.5s;
+}
+.slides-button button:hover { 
+    color: #060606;
+    background-color: #E5E5E5;
 }
