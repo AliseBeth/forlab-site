@@ -42,21 +42,33 @@ h2 {
     font-size: 16px;
     font-weight: 100;
 }
+button {
+    font-family: 'Overpass';
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+li{
+    list-style: none;
+}
+
 
 
 header {
     background-color: #060606;
 }
 .head {
-    position: relative;
+    position: fixed;
     z-index: 1;
     margin-left: auto;
     margin-right: auto;
-    width: 1024px;
+    width: 95vw;
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
     padding-bottom: 36px;
+    padding-left: 2.5vw;
 }
 .project-logo {
     width: 174px;
@@ -142,6 +154,9 @@ header {
 }
 
 
+
+
+
 .questions {
     background-color: #060606;
     color: #E5E5E5;
@@ -166,59 +181,118 @@ header {
     top: 78px;
     left: 88px;
 }
-.questions-text li{
-    list-style: none;
-}
+
 .questions-line {
     position: absolute;
 }
 
 
-.q1 {
+.questions-text ul :nth-child(1) {
     position: absolute;
     left: 392px;
 }
-.q2 {
+.questions-text ul :nth-child(2) {
     position: absolute;
     top: 68px;
 }
-.q3 {
+.questions-text ul :nth-child(3) {
     position: absolute;
     top: 27px;
     left: 524px;
 }
-.q4 {
+.questions-text ul :nth-child(4) {
     position: absolute;
     top: 99px;
     left: 786px;
 }
-.q5 {
+.questions-text ul :nth-child(5) {
     position: absolute;
     top: 191px;
     left: 262px;
 }
-.q6 {
+.questions-text ul :nth-child(6) {
     position: absolute;
     top: 500px;
     left: 524px;
 }
-.q7 {
+.questions-text ul :nth-child(7) {
     position: absolute;
     top: 420px;
     left: 866px;
     width: 95px;
 }
-.q8 {
+.questions-text ul :nth-child(8) {
     position: absolute;
     top: 514px;
 }
-.q9 {
+.questions-text ul :nth-child(9) {
     position: absolute;
     top: 589px;
     left: 655px;
 }
-.q10 {
+.questions-text ul :nth-child(10) {
     position: absolute;
     top: 648px;
     left: 131px;
+}
+
+
+
+.slides {
+    background-color: #060606;
+}
+.slides-content {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    align-items: center;
+    width: 1280px;
+    height: 840px;
+}
+
+
+.slides-one {
+    position: relative;
+    height: 164px;
+    margin-bottom: 6px;
+}
+.slides-one p {
+    display: none;
+}
+.slides-one img {
+    height: 100%;
+    width: 1280px;
+    object-fit: cover;
+}
+
+
+.slides-text ul :nth-child(1) h2 {
+    position: absolute;
+    top:108px;
+    left:128px;
+}
+.slides-text ul :nth-child(2) h2 {
+    position: absolute;
+    top:108px;
+    left:392px;
+}
+.slides-text ul :nth-child(3) h2 {
+    position: absolute;
+    top:108px;
+    left:128px;
+}
+.slides-text ul :nth-child(4) h2 {
+    position: absolute;
+    top:108px;
+    left:524px;
+}
+
+.slides-button button {
+    color: #E5E5E5;
+    background-color: #060606;
+    border-style: none;
+    padding: 12px 53px 10px;
+    border: #E5E5E5 solid 3px;
+    margin-top: 54px;
 }
