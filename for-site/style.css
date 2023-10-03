@@ -189,7 +189,7 @@ header {
     right: 0;
 }
 .welcome-arrow {
-    bottom: 30px;
+    bottom: 10px;
     position: absolute;
 }
 .welcome-container a {
@@ -703,4 +703,8 @@ header {
     position: absolute;
     right: 16px;
     top: 118px;
+}
+.items-content ul {
+    position: absolute;
+    top: 465px;
 }
