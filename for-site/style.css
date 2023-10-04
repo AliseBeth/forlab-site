@@ -805,7 +805,7 @@ header {
 
 .pack-container {
     width: 1280px;
-    height: 840px;
+    height: 1014px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -820,6 +820,7 @@ header {
     height: 840px;
     z-index: 0;
     left: 390px;
+    top: 0;
 }
 .pack-imgs :nth-child(1) img{
     position: absolute;
@@ -926,4 +927,40 @@ header {
     transform: rotate(90deg);
     margin-left: 64px;
     transition: 0.5s;
+}
+
+
+
+
+.footer {
+    background-color: #060606;
+    height: 840px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-container {
+    color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    width: 786px;
+    height: 553px;
+    text-align: center;
+    align-items: center;
+}
+.footer-info p {
+    margin-bottom: 8px;
+}
+.footer-contacts {
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    width: 768px;
+    margin-top: 197px;
+    margin-bottom: 152px;
+}
+.footer-icons {
+    width: 248px;
+    display: flex;
+    justify-content: space-between;
 }
