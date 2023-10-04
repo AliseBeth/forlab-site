@@ -575,7 +575,7 @@ header {
     transition: 0.5s;
 }
 .list-num-one:hover:before{
-    opacity: 40%;
+    opacity: 60%;
     transition: 0.5s;
 }
 
@@ -604,7 +604,7 @@ header {
     transition: 0.5s;
 }
 .list-num-two:hover:after{
-    opacity: 40%;
+    opacity: 60%;
     transition: 0.5s;
 }
 .list-num-tree{
@@ -633,7 +633,7 @@ header {
     transition: 0.5s;
 }
 .list-num-tree:hover:after{
-    opacity: 40%;
+    opacity: 60%;
     transition: 0.5s;
 }
 
@@ -951,6 +951,19 @@ header {
 .footer-info p {
     margin-bottom: 8px;
 }
+.footer-info h2 {
+    cursor: pointer;
+}
+.footer-info h2:hover {
+    color: #ffffff;  
+}
+.footer-info h2:active {
+    color: #060606; 
+    transition: 0.3s; 
+}
+.footer a {
+    color: #E5E5E5;
+}
 .footer-contacts {
     text-align: start;
     display: flex;
@@ -963,4 +976,22 @@ header {
     width: 248px;
     display: flex;
     justify-content: space-between;
+}
+.footer-adress a:hover{
+    color: #ffffff;
+    cursor: pointer;
+}
+.footer-adress a:active{
+    color: #060606;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.footer-tel a:hover{
+    color: #ffffff;
+    cursor: pointer;
+}
+.footer-tel a:active{
+    color: #060606;
+    cursor: pointer;
+    transition: 0.3s;
 }
