@@ -1,0 +1,84 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+@font-face {
+    font-family: "Open Sans Condensed Regular";
+    font-style: normal;
+    font-weight: 200;
+
+    src: local("Roboto"),
+         url("../for-site/font/OpenSansCondensed-Regular.woff2") format("woff2"),
+         url("../for-site/font/OpenSansCondensed-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Open Sans Condensed Bold";
+    font-style: normal;
+    font-weight: 200;
+
+    src: local("Roboto"),
+         url("../for-site/font/OpenSansCondensed-Bold.woff2") format("woff2"),
+         url("../for-site/font/OpenSansCondensed-Bold.woff") format("woff");
+}
+
+
+
+body {
+    font-family:  'Open Sans', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: black;
+}
+h1{
+    font-size: 112px;
+    line-height: 128px;
+    font-weight: 700;
+}
+h2 {
+    font-family:  'Open Sans Condensed Regular', 'Arial', sans-serif;
+    font-size: 56px;
+    line-height: 64px;
+}
+h3{
+    font-size: 28px;
+    line-height: 32px;
+}
+h4{
+    font-size: 448px;
+    line-height: 512px;
+    font-weight: 700;
+}
+button {
+    font-family:  'Open Sans Condensed Bold', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+
+li {
+    text-decoration: none;
+}
