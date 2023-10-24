@@ -674,3 +674,103 @@ nav div:hover {
     left: 74px;
     transition: 0.5s ease-out 0.5s;
 }
+
+
+
+
+
+
+
+
+.techno-container {
+    width: 1152px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 176px 144px 0px 144px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.techno-container h2 {
+    margin-bottom: 81px;
+    width: 1152px;
+}
+.techno-img img{
+    width: 1151px;
+    height: 479px;
+    filter: grayscale(100%);
+    opacity: 0.3;
+}
+.techno-list img {
+    width: 143px;
+    height: 159px;
+    filter: grayscale(100%);
+    opacity: 0.3;
+    transition: 0.5s;
+    position: absolute;
+    z-index: 0;
+}
+.techno-list li:hover img{
+    filter: grayscale(0%);
+    opacity: 1;
+    transition: 0.5s ease-out 0.5s;
+    width: 575px;
+}
+.techno-list li:hover h4{
+    opacity: 0.5;
+    top: -160px;
+    transition: 0.5s ease-out 0.5s;
+}
+
+
+.techno-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin-top: 80px;
+}
+.techno-list li {
+    width: 559px;
+    height: 159px;
+    margin-bottom: 82px;
+    margin-right: 17px;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.techno-list li h4 {
+    position: absolute;
+    color: #ffffff;
+    opacity: 0;
+    z-index: 1;
+    top: -100px;
+    left: -94px;
+    transition: 0.5s;
+}
+.techno-text {
+    position: absolute;
+    width: 400px;
+    top: 16px;
+    left: 159px;
+}
+.techno-text h3 {
+    margin-bottom: 16px;
+}
+
+.techno button{
+    background-color: #3DB9FF;
+    border: none;
+    padding: 16px 77px;
+    cursor: pointer;
+    margin-top: 29px;
+    transition: 0.4s;
+}
+.techno button:hover {
+    background-color: #8bd4ff;
+    transition: 0.4s;
+}
+.techno button:active {
+    background-color: #24709c;
+}
