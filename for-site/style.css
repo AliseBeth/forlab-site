@@ -774,3 +774,89 @@ nav div:hover {
 .techno button:active {
     background-color: #24709c;
 }
+
+
+
+
+
+
+.crazy-container {
+    width: 1151px;
+    height: 1119px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 161px 144px 0px 145px;
+    position: relative;
+}
+.crazy-head h2{
+    width: 576px;
+}
+.crazy-imgs {
+    position: absolute;
+    width: 1151px;
+    height: 1119px;
+    top: 161px;
+    left: 145px;
+}
+.crazy-imgs img {
+    position: absolute;
+    filter: grayscale(100%);
+    opacity: 0.3;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.crazy-imgs img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.crazy-imgs li:nth-child(1) img {
+    width: 575px;
+    height: 639px;
+    top: 160px;
+}
+.crazy-imgs li:nth-child(2) img {
+    width: 287px;
+    height: 319px;
+    top: 0;
+    left: 576px;
+}
+.crazy-imgs li:nth-child(3) img {
+    width: 287px;
+    height: 479px;
+    top: 0;
+    right: 0;
+}
+.crazy-imgs li:nth-child(4) img {
+    width: 575px;
+    height: 319px;
+    bottom: 0;
+    left: 288px;
+}
+.crazy-imgs li:nth-child(5) img {
+    width: 287px;
+    height: 319px;
+    bottom: 0;
+    right: 0;
+}
+.crazy-text {
+    position: absolute;
+    width: 544px;
+    top: 496px;
+    left: 736px;
+}
+.crazy-text h3 {
+    width: 256px;
+    margin-bottom: 32px;
+}
+.crazy-text p {
+    width: 544px;
+    margin-bottom: 16px;
+}
+.crazy-text ul li {
+    list-style: disc;
+}
+.crazy-text ul {
+    margin-left: 20px;
+}
