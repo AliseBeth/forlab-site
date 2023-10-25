@@ -302,6 +302,7 @@ nav div:hover {
 }
 .info-head h2 {
     margin-bottom: 81px;
+    margin-top: 15px;
 }
 .info-text {
     width: 573px;
@@ -311,7 +312,7 @@ nav div:hover {
     border: none;
     padding: 16px 55px;
     cursor: pointer;
-    margin-top: 112px;
+    margin-top: 145px;
     margin-left: 430px;
     transition: 0.4s;
 }
