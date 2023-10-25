@@ -439,6 +439,10 @@ nav div:hover {
     filter: grayscale(100%);
     opacity: 0.3;
 }
+.info2-imgs div {
+    height: 319px;
+    margin-bottom: 1px;
+}
 .info2-text {
     width: 432px;
     margin-top: 15px;
