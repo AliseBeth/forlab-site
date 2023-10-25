@@ -302,6 +302,7 @@ nav div:hover {
 }
 .info-head h2 {
     margin-bottom: 81px;
+    margin-top: 15px;
 }
 .info-text {
     width: 573px;
@@ -311,7 +312,7 @@ nav div:hover {
     border: none;
     padding: 16px 55px;
     cursor: pointer;
-    margin-top: 112px;
+    margin-top: 145px;
     margin-left: 430px;
     transition: 0.4s;
 }
@@ -347,6 +348,10 @@ nav div:hover {
     margin-left: 1px;
     transition: 0.4s;
     cursor: pointer;
+}
+.pictures-info ul li div {
+    height: 319px;
+    margin-bottom: 1px;
 }
 .pictures-info img:hover {
     width: 256px;
@@ -433,6 +438,10 @@ nav div:hover {
     object-fit: cover;
     filter: grayscale(100%);
     opacity: 0.3;
+}
+.info2-imgs div {
+    height: 319px;
+    margin-bottom: 1px;
 }
 .info2-text {
     width: 432px;
