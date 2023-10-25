@@ -349,6 +349,10 @@ nav div:hover {
     transition: 0.4s;
     cursor: pointer;
 }
+.pictures-info ul li div {
+    height: 319px;
+    margin-bottom: 1px;
+}
 .pictures-info img:hover {
     width: 256px;
     height: 288px;
