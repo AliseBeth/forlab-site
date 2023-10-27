@@ -85,10 +85,10 @@ li {
 
 
 header {
-    background-color: none;
     position: fixed;
     width: 100%;
     z-index: 20;
+    background-color: #E5E5E5;
 }
 nav {
     display: flex;
@@ -97,12 +97,13 @@ nav {
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 48px;
+    padding-bottom: 16px;
+
 }
 nav div {
-    opacity: 0.5;
     cursor: pointer;
     transition: 0.5s;
+    opacity: 0.5;
 }
 .header-burger {
     width: 48px;
@@ -110,7 +111,6 @@ nav div {
 }
 nav div:hover {
     opacity: 1;
-    transition: 0.5s;
 }
 
 
@@ -139,7 +139,7 @@ nav div:hover {
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    padding: 176px 142px 2px 145px;
+    padding: 88px 142px 2px 145px;
 }
 .slides-slide-hidden {
     opacity: 0;
@@ -149,6 +149,7 @@ nav div:hover {
 }
 .slides-slide-hidden h3 {
     margin-bottom: 16px;
+    transition: 0.4s;
 }
 .slides-slide-img img {
     height: 642px;
@@ -185,6 +186,7 @@ nav div:hover {
 }
 .slides-slide-word {
     z-index: 8;
+    width: 160px;
 }
 .slides-slide ul li:nth-child(4) .slides-slide-img{
     z-index: 0;
@@ -234,9 +236,7 @@ nav div:hover {
     top: 450px;
     left: 95px;
 }
-.slides-slide-word h3{
-    transition: 0.4s;
-}
+
 
 
 
@@ -287,10 +287,14 @@ nav div:hover {
 
 
 
-
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .info-container {
     width: 1153px;
-    padding: 161px 143px 0px 144px;
+    padding: 80px 143px 0px 144px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -313,20 +317,20 @@ nav div:hover {
 .info-text {
     width: 573px;
 }
-.info-info button {
+.info button {
     background-color: #3DB9FF;
     border: none;
     padding: 16px 55px;
     cursor: pointer;
-    margin-top: 145px;
-    margin-left: 430px;
+    width: 287px;
     transition: 0.4s;
+    margin-top: 80px;
 }
-.info-info button:hover {
+.info button:hover {
     background-color: #8bd4ff;
     transition: 0.4s;
 }
-.info-info button:active {
+.info button:active {
     background-color: #24709c;
 }
 
@@ -340,7 +344,7 @@ nav div:hover {
     width: 1152px;
     margin-left: auto;
     margin-right: auto;
-    padding: 161px 143px 0px 145px;
+    padding: 80px 143px 0px 145px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -413,7 +417,7 @@ nav div:hover {
     border: none;
     padding: 16px 77px;
     cursor: pointer;
-    margin-top: 112px;
+    margin-top: 80px;
     transition: 0.4s;
 }
 .pictures-button button:hover {
@@ -432,7 +436,7 @@ nav div:hover {
 
 .info2-container {
     width: 1152px;
-    margin: 161px 143px 0px 145px;
+    margin: 80px 143px 0px 145px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
