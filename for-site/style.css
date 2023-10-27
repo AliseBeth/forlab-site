@@ -143,7 +143,6 @@ nav div:hover {
 }
 .slides-slide-hidden {
     opacity: 0;
-    width: 0px;
     transition: 0s;
     margin: 175px 160px;
 }
@@ -178,8 +177,7 @@ nav div:hover {
 .slides-slide-letter {
     color: #ffffff;
     z-index: 1;
-    transition: 0.4s;
-    width: 143px;
+    transition: 0.4s;  
 }
 .slides-slide-img {
     z-index: 0;
