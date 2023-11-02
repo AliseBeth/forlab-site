@@ -294,6 +294,44 @@ nav div:hover {
 
 
 
+.moving-line {
+    margin-top: 80px;
+    background-color: #3DB9FF;
+}
+.moving-line-container {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 99vw;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+.moving-line-text {
+    display: flex;
+    animation: startLine 20s linear infinite;
+    padding: 10px 0px;
+}
+.moving-line-text h2 {
+    text-align: center;
+    margin-left: 64px;
+}
+
+@keyframes startLine {
+    0% {
+        transform: translate(0%, 0);
+    }
+    100% {
+        transform: translate(-50%, 0);
+    }
+}
+
+
+
+
+
+
+
 
 .info {
     display: flex;
