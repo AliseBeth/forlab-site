@@ -200,20 +200,20 @@ nav div:hover {
 }
 .slides-slide ul li:nth-child(4) .slides-slide-letter{
     z-index: 1;
-    top: 65px;
-    left: -50px;
+    top: -134px;
+    left: 30px;
 }
 .slides-slide ul li:nth-child(4) .slides-slide-word{
-    top: 289px;
-    left: 95px;
+    top: 128px;
+    left: 114px;
 }
 .slides-slide ul li:nth-child(3) .slides-slide-img{
     z-index: 2;
 }
 .slides-slide ul li:nth-child(3) .slides-slide-letter{
     z-index: 3;
-    top: 225px;
-    left: -50px;
+    top: 212px;
+    left: -12px;
 }
 .slides-slide ul li:nth-child(3) .slides-slide-word{
     top: 450px;
@@ -296,7 +296,7 @@ nav div:hover {
 
 .moving-line {
     margin-top: 80px;
-    background-color: #3DB9FF;
+    
 }
 .moving-line-container {
     display: inline-block;
@@ -306,26 +306,44 @@ nav div:hover {
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
+    background-color: #3DB9FF;
+    transition: 0.4s;
 }
 .moving-line-text {
     display: flex;
-    animation: startLine 20s linear infinite;
-    padding: 10px 0px;
+    animation: startLine 30s linear  infinite;
 }
 .moving-line-text h2 {
     text-align: center;
     margin-left: 64px;
+    padding-bottom: 12px;
+
+}
+
+.moving-line-container:active {
+    background-color: #24709c;
 }
 
 @keyframes startLine {
     0% {
         transform: translate(0%, 0);
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 1;
     }
     100% {
         transform: translate(-50%, 0);
+        opacity: 0;
     }
 }
 
+.moving-line-text h2:nth-child(2n) {
+    margin-top: 4px;
+}
 
 
 
@@ -481,6 +499,51 @@ nav div:hover {
     background-color: #24709c;
 }
 
+
+
+
+.chapter {
+    background-color: #E5E5E5;
+}
+.chapter-container {
+    position: relative;
+    width: 721px;
+    height: 479px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 481px 143px 64px 576px;
+    margin-top: 80px; 
+
+}
+.chapter-text {
+    position: relative;
+    width: 615px;
+    height: 187px;
+
+}
+.chapter-text h2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.chapter-container h4 {
+    position: absolute;
+    bottom: 64px;
+    right: 143px;
+    color: #ffffff;
+    opacity: 0.5;
+    z-index: 0;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.chapter-container h4:hover {
+    transition: 0.4s;
+    opacity: 1;
+}
+.chapter-container h4:active {
+    color: #24709c;
+}
 
 
 
