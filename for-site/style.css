@@ -98,9 +98,14 @@ nav {
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
-
     padding-top: 16px;
     background-color: #e5e5e5;
+    box-shadow: none;
+    transition: 0.4s;
+}
+nav:hover {
+    box-shadow: 1px 0px 10px 0px #838383;
+    transition: 0.4s;
 }
 nav div {
     display: flex;
@@ -135,11 +140,12 @@ nav div {
 
 .welcome {
     background-color: #E5E5E5;
+    height: 100vh;
 }
 .welcome-container {
     display: flex;
     flex-direction: column;
-    padding: 548px 144px 223px 576px;
+    padding: 50vh 144px 0vh 576px;
     width: 720px;
     margin-left: auto;
     margin-right: auto;
@@ -575,7 +581,7 @@ nav div {
     width: 1151px;
     margin-left: auto;
     margin-right: auto;
-    padding: 88px 144px 80px 145px;
+    padding: 88px 144px 0px 145px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -621,6 +627,72 @@ nav div {
     background-color: #24709c;
 }
 
+
+
+
+.partners-container {
+    width: 1151px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 88px 144px 0px 145px;
+    
+}
+.partners-moving {
+    padding: 80px 0px;
+    overflow: hidden;
+    height: 176px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.partners-moving ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: 0.4s;
+    animation: startLinePartners 10s linear  infinite;
+    position: relative;
+}
+.partners-moving img {
+    width: 127px;
+    height: 143px;
+    filter: grayscale(100%);
+    opacity: 0.3;
+    margin-right: 16px;
+    transition: 0.4s;
+}
+
+.partners-moving li:hover img{
+    filter: grayscale(0%);
+    opacity: 1;
+    width: 143px;
+    height: 159px;
+    transition: 0.4s;
+}
+.partners-moving ul:hover {
+    animation-play-state: paused;
+}
+
+@keyframes startLinePartners {
+    0% {
+        transform: translate(0%, 0);
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-10%, 0);
+        opacity: 0;
+    }
+}
 
 
 
