@@ -320,13 +320,13 @@ nav div {
 
 .moving-line {
     margin-top: 80px;
+    width: 100%;
     
 }
 .moving-line-container {
-    display: inline-block;
+    display: inline-flex;
     white-space: nowrap;
-    overflow: hidden;
-    width: 99vw;
+    overflow: hidden; 
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
@@ -335,7 +335,7 @@ nav div {
 }
 .moving-line-text {
     display: flex;
-    animation: startLine 30s linear  infinite;
+    animation: startLine 15s linear infinite;
 }
 .moving-line-text h2 {
     text-align: center;
@@ -354,17 +354,9 @@ nav div {
 @keyframes startLine {
     0% {
         transform: translate(0%, 0);
-        opacity: 0;
-    }
-    5% {
-        opacity: 1;
-    }
-    95% {
-        opacity: 1;
     }
     100% {
-        transform: translate(-50%, 0);
-        opacity: 0;
+        transform: translate(-100%, 0);
     }
 }
 
@@ -632,7 +624,9 @@ nav div {
 
 
 
-
+.partners {
+    width: 100%;
+}
 .partners-container {
     width: 1151px;
     margin-left: auto;
@@ -641,10 +635,11 @@ nav div {
     
 }
 .partners-moving {
-    padding: 80px 0px;
+    display: inline-flex;
+    white-space: nowrap;
+    margin: 80px 0px;
     overflow: hidden;
     height: 176px;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -657,8 +652,9 @@ nav div {
     margin-right: auto;
     cursor: pointer;
     transition: 0.4s;
-    animation: startLinePartners 10s linear  infinite;
+    animation: startLine 15s linear infinite;
     position: relative;
+    margin-right: 16px;
 }
 .partners-moving img {
     width: 127px;
@@ -668,6 +664,9 @@ nav div {
     margin-right: 16px;
     transition: 0.4s;
 }
+.partners-moving li:nth-last-child(1) img{
+    margin-right: 0px;
+}
 
 .partners-moving li:hover img{
     filter: grayscale(0%);
@@ -676,24 +675,18 @@ nav div {
     height: 159px;
     transition: 0.4s;
 }
-.partners-moving ul:hover {
+.partners-moving:hover ul{
     animation-play-state: paused;
 }
 
 @keyframes startLinePartners {
     0% {
         transform: translate(0%, 0);
-        opacity: 0;
-    }
-    5% {
-        opacity: 1;
-    }
-    95% {
-        opacity: 1;
+
     }
     100% {
-        transform: translate(-10%, 0);
-        opacity: 0;
+        transform: translate(-100%, 0);
+
     }
 }
 
