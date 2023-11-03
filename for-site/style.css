@@ -332,10 +332,11 @@ nav div {
     cursor: pointer;
     background-color: #e5e5e5;
     transition: 0.4s;
+    width: 100%;
 }
 .moving-line-text {
     display: flex;
-    animation: startLine 15s linear infinite;
+    animation: startLine 20s linear infinite;
 }
 .moving-line-text h2 {
     text-align: center;
@@ -632,27 +633,28 @@ nav div {
     margin-left: auto;
     margin-right: auto;
     padding: 88px 144px 0px 145px;
+    overflow: hidden;
     
 }
 .partners-moving {
     display: inline-flex;
-    white-space: nowrap;
     margin: 80px 0px;
     overflow: hidden;
     height: 176px;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    width: 100%;
 }
 .partners-moving ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    white-space: nowrap;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
     transition: 0.4s;
-    animation: startLine 15s linear infinite;
+    animation: startLine 20s linear infinite;
     position: relative;
     margin-right: 16px;
 }
