@@ -80,6 +80,10 @@ button {
 li {
     list-style: none;
 }
+.hidden {
+    display: none;
+}
+
 
 
 
@@ -139,19 +143,87 @@ nav div {
 
 
 .welcome {
-    background-color: #E5E5E5;
     height: 100vh;
-}
-.welcome-container {
+    width: auto;
     display: flex;
     flex-direction: column;
-    padding: 50vh 144px 0vh 576px;
-    width: 720px;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-container {
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.welcome-slide h2 {
+    width: 720px;
+}
+.welcome-slide-info {
+    position: absolute;
+    z-index: 2;
+    left: 45vw;
+    top: 52vh;
+}
+.black {
+    background-color: #000000;
+    border-radius: 90px;
+    z-index: 10;
+}
+.welcome-slide {
+    position: absolute;
+    z-index: 10;
+}
+.welcome-circle {
+    position: relative;
+    width: 20px; 
+    height: 20px;
+}
+.welcome-circle:before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 3px solid black;
+    border-radius: 90px;
+    cursor: pointer;
+    transition: 0.4s;
+    z-index: 10;
+}
+.welcome-circle:hover:before {
+    background-color: #000000;
+    transition: 0.4s;
+}
+.welcome-circles {
+    display: flex;
+    width: 144px;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 63px;
 }
 
+.welcome-slide-img {
+    width: 99.1vw;
+    height: 100vh;
+}
+.welcome-slide img {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-size: cover;
+    opacity: 0.3;
+}
 
+.welcome-container .welcome-slide:nth-child(1) img{
+    filter: grayscale(50%);
+}
+.welcome-container .welcome-slide:nth-child(2) img{
+    filter: grayscale(20%);
+}
+.welcome-container .welcome-slide:nth-child(3) img{
+    filter: grayscale(100%);
+}
 
 
 
@@ -225,11 +297,11 @@ nav div {
 .slides-slide ul li:nth-child(4) .slides-slide-letter{
     z-index: 1;
     top: -134px;
-    left: 30px;
+    left: -15px;
 }
 .slides-slide ul li:nth-child(4) .slides-slide-word{
     top: 134px;
-    left: 72px;
+    left: 90px;
 }
 .slides-slide ul li:nth-child(3) .slides-slide-img{
     z-index: 2;
@@ -253,19 +325,19 @@ nav div {
 }
 .slides-slide ul li:nth-child(2) .slides-slide-word{
     top: 289px;
-    left: 95px;
+    left: 110px;
 }
 .slides-slide ul li:nth-child(1) .slides-slide-img{
     z-index: 6;
 }
 .slides-slide ul li:nth-child(1) .slides-slide-letter{
     z-index: 7;
-    top: 225px;
-    left: -50px;
+    top: 212px;
+    left: -80px;
 }
 .slides-slide ul li:nth-child(1) .slides-slide-word{
     top: 450px;
-    left: 72px;
+    left: 110px;
 }
 
 
@@ -275,6 +347,7 @@ nav div {
     flex-grow: 5;
     transition: 0.5s ease-out 0.5s;
 }
+
 .slides-slide li:hover .slides-slide-img img{
     filter: grayscale(0%);
     opacity: 1;
@@ -309,7 +382,7 @@ nav div {
 }
 .slides-slide:hover .slides-slide-word {
     opacity: 0;
-    transition: 0.5s ease-out 0.5s;
+    transition: 0.4s ease-out 0.4s;
 }
 
 
@@ -474,7 +547,7 @@ nav div {
 .pictures-info-head h4{
     position: absolute;
     top: -111px;
-    left: -65px;
+    left: -80px;
     color: #D9D9D9;
     z-index: 0;
 }
@@ -541,11 +614,15 @@ nav div {
     height: 187px;
 
 }
+.chapter-text h1{
+    position: relative;
+    z-index: 2;
+}
 .chapter-text h2 {
     position: absolute;
     left: 5px;
-    bottom: 0;
-    z-index: 1;
+    top: 118px;
+    z-index: 2;
 }
 .chapter-container h4 {
     position: absolute;
@@ -638,7 +715,7 @@ nav div {
 }
 .partners-moving {
     display: inline-flex;
-    margin: 80px 0px;
+    margin: 40px 0px 80px 0px;
     overflow: hidden;
     height: 176px;
     justify-content: center;
