@@ -210,20 +210,16 @@ nav div {
 .welcome-slide img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     z-index: 1;
     background-size: cover;
     opacity: 0.3;
-}
-
-.welcome-container .welcome-slide:nth-child(1) img{
-    filter: grayscale(50%);
-}
-.welcome-container .welcome-slide:nth-child(2) img{
-    filter: grayscale(20%);
-}
-.welcome-container .welcome-slide:nth-child(3) img{
     filter: grayscale(100%);
 }
+
+
+
+
 
 
 
