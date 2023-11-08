@@ -252,15 +252,15 @@ nav div {
 }
 .welcome-circle {
     position: relative;
-    width: 20px; 
-    height: 20px;
+    width: 11px; 
+    height: 11px;
 }
 .welcome-circle:before {
     content: '';
     position: absolute;
-    width: 16px;
-    height: 16px;
-    border: 3px solid black;
+    width: 8px;
+    height: 8px;
+    border: 2px solid black;
     border-radius: 90px;
     cursor: pointer;
     transition: 0.4s;
@@ -272,7 +272,7 @@ nav div {
 }
 .welcome-circles {
     display: flex;
-    width: 144px;
+    width: 100px;
     justify-content: space-between;
     position: absolute;
     bottom: 63px;
