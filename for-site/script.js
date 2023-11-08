@@ -48,6 +48,8 @@ setInterval(function() {
 
 
 
+
+
 //меню
 
 const menu_btn = document.querySelector('.header-burger');
