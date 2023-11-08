@@ -1,3 +1,5 @@
+//слайдер на главной странице welcome
+
 const welcome_btn = document.querySelectorAll('.welcome-circle');
 const welcome_window = document.querySelectorAll('.welcome-slide');
 
@@ -15,15 +17,13 @@ for (let i = 0; i < welcome_btn.length; i++) {
     }
 }
 
-
 var currentSlide = 0;
-
-
 setInterval(function() {
 
     for (let b = 0; b < welcome_btn.length; b++) {
         welcome_window[b].classList.add('hidden');
         welcome_btn[b].classList.remove('black');
+        
     };
 
     for (let n = 0; n < welcome_btn.length; n++) {
@@ -43,5 +43,25 @@ setInterval(function() {
         currentSlide = 0;
     }
     
+}, 3000); 
 
-}, 2000); 
+
+
+
+//меню
+
+const menu_btn = document.querySelector('.header-burger');
+const menu = document.querySelector('.header-container');
+
+
+menu_btn.addEventListener("click", openMenu);
+
+function openMenu(event) {
+    menu.classList.toggle('header-opened');
+    document.body.classList.toggle('overflow');
+    document.querySelector('.head-bur').classList.toggle('hidden');
+    document.querySelector('.head-cross').classList.toggle('hidden');
+    document.querySelector('.header-info').classList.toggle('hidden');
+    document.querySelector('.header-social').classList.toggle('opened');
+    document.querySelector('.header-media').classList.toggle('opened');
+}
