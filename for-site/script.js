@@ -61,6 +61,7 @@ menu_btn.addEventListener("click", openMenu);
 function openMenu(event) {
     menu.classList.toggle('header-opened');
     document.body.classList.toggle('overflow');
+    document.querySelector('.header-contacts').classList.toggle('opened');
     document.querySelector('.head-bur').classList.toggle('hidden');
     document.querySelector('.head-cross').classList.toggle('hidden');
     document.querySelector('.header-info').classList.toggle('hidden');

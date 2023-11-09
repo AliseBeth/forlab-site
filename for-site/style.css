@@ -175,7 +175,11 @@ nav div {
 .header-info.hidden {
     display: none;
 }
-.header-contacts {
+.header-info {
+    animation-name: visible;
+    animation-duration: 1s;
+}
+.header-contacts.opened{
     margin-top: 33px;
     display: flex;
     flex-direction: column;
@@ -184,6 +188,18 @@ nav div {
     width: 262px;
     justify-content: space-between;
 }
+@keyframes visible {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+
 .header-contacts-logo {
     cursor: pointer;
 }
