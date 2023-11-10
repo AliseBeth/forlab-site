@@ -116,7 +116,7 @@ header {
     background-color: #3DB9FF;
 }
 nav div {
-    display: flex;
+    display: flex;  
     align-items: center;
     transition: 0.5s;
     float: left;
@@ -158,9 +158,15 @@ nav div {
     flex-direction: column;
     width: 678px;
 }
-.header-menu h1 {
-    width: 678px;
+.header-menu button {
+    background-color: transparent;
+    border: none;
+    font-family:  'Open Sans', 'Arial', sans-serif;
     text-align: left;
+    width: 678px;
+}
+.header-menu h1 {
+    width: min-content;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -906,27 +912,46 @@ nav div {
 }
 .chapter-container h4 {
     position: absolute;
-    bottom: 64px;
+    top: -164px;
     right: 143px;
     color: #ffffff;
     opacity: 0.5;
     z-index: 1;
     transition: 0.4s;
     cursor: pointer;
+    animation: movingArrows 3s linear  infinite;    
 }
 .chapter-container h4:hover {
     transition: 0.4s;
     opacity: 1;
+    animation-play-state: paused;
 }
 .chapter-container h4:active {
     opacity: 0;
 }
-.chapter-container button {
+.chapter-container button{
     border: none;
     background-color: transparent;
+    height: 220px;
+    width: 700px;
+    overflow: hidden;
+    position: absolute;
+    top: 565px;
+    right: 0;
 }
 
 
+@keyframes movingArrows {
+    0% {
+        transform: translate(10%, 0);
+    }
+    50% {
+        transform: translate(0%, 0)
+    }
+    100% {
+        transform: translate(10%, 0);
+    }
+}
 
 
 
