@@ -123,11 +123,21 @@ nav div {
 }
 .header-burger {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
     width: 64px;
     cursor: pointer;
+}
+
+.header-burger button {
+    cursor: pointer;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
 }
 .header-burger img{
     width: 38px;
