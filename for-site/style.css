@@ -1153,6 +1153,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    overflow: hidden;
 }
 .sp-welcome-container h4 {
     font-size: 869px;
@@ -1194,6 +1195,7 @@ footer {
 
 
 
+
 .sp-pictures-container {
     width: 1151px;
     margin-left: auto;
@@ -1207,13 +1209,54 @@ footer {
 .sp-pictures-info img {
     filter: grayscale(100%);
     opacity: 0.3;
-    cursor: pointer;
+    transition: 0.4s;
 }
 .sp-pictures-info{
     position: relative;
     width: 1151px;
     height: 1279px;
 }
+.sp-pictures-info ul li div {
+    transition: 0.4s ease-out 0.3s;
+    cursor: pointer;
+}
+.sp-pictures-info ul li:nth-child(n) div:hover img{
+    filter: grayscale(0%);
+    opacity: 1;
+    transition: 0.4s ease-out 0.3s;
+}
+.sp-pictures-btn {
+    position: relative;
+    transition: 0.4s ease-out 0.3s;
+}
+.sp-pictures-btn button {
+    position: absolute;
+    z-index: 9;
+    width: 47px;
+    height: 100%;
+    font-size: 28px;
+    border: transparent;
+    background-color: rgba(221, 220, 220, 0.239);
+    color: #ffffff;
+    cursor: pointer;
+    opacity: 0;
+}
+.sp-pictures-btn button:hover {
+    background-color: rgba(221, 220, 220, 0.822);
+    transition: 0.3s !important;
+}
+.sp-pictures-btn-right {
+    right: 0;
+}
+.sp-pictures-info ul li:nth-child(n) div:hover button{
+    opacity: 1;
+    transition: 0.4s ease-out 0.3s;
+}
+.sp-pictures-info ul li:nth-child(n) div:hover .sp-pictures-slide-text{
+    opacity: 1;
+    transition: 0.2s ease-out 0.7s;
+}
+
 
 
 .sp-pictures-info ul li:nth-child(1) div{
@@ -1228,6 +1271,13 @@ footer {
     height: 100%;
     object-fit: cover;
 }
+.sp-pictures-info ul li:nth-child(1) div:hover div{
+    z-index: 20;
+    height: 639px;
+}
+
+
+
 .sp-pictures-info ul li:nth-child(2) div{
     position: absolute;
     top: 0;
@@ -1240,6 +1290,12 @@ footer {
     height: 959px;
     object-fit: cover;
 }
+.sp-pictures-info ul li:nth-child(2) div:hover div{
+    z-index: 20;
+    width: 575px;
+}
+
+
 .sp-pictures-info ul li:nth-child(3) div{
     position: absolute;
     top: 320px;
@@ -1251,7 +1307,14 @@ footer {
     width: 575px;
     height: 100%;
     object-fit: cover;
+    top: 0;
 }
+.sp-pictures-info ul li:nth-child(3) div:hover{
+    z-index: 8;
+    height: 639px;
+}
+
+
 .sp-pictures-info ul li:nth-child(4){
     position: absolute;
     top: 320px;
@@ -1259,6 +1322,8 @@ footer {
     width: 287px;
     height: 319px;
 }
+
+
 .sp-pictures-info ul li:nth-child(5) div{
     position: absolute;
     bottom: 0;
@@ -1271,10 +1336,16 @@ footer {
     height: 639px;
     object-fit: cover;
 }
+.sp-pictures-info ul li:nth-child(5) div:hover div{
+    z-index: 8;
+    width: 575px;
+}
+
+
 .sp-pictures-info ul li:nth-child(6) div{
     position: absolute;
-    top: 640px;
-    left: 288px;
+    top: 320px;
+    left: 144px;
     width: 575px;
     height: 319px;
 }
@@ -1283,6 +1354,11 @@ footer {
     height: 100%;
     object-fit: cover;
 }
+.sp-pictures-info ul li:nth-child(6) div:hover div{
+    z-index: 8;
+    height: 639px;
+}
+
 .sp-pictures-info ul li:nth-child(7){
     position: absolute;
     top: 960px;
@@ -1302,7 +1378,29 @@ footer {
     height: 100%;
     object-fit: cover;
 }
+.sp-pictures-info ul li:nth-child(8) div:hover div{
+    z-index: 8;
+    height: 639px;
+}
 
+.sp-pictures-slide-text {
+    position: relative;
+    opacity: 0;
+    transition: 0.2s;
+}
+.sp-pictures-slide-text h3{
+    width: 247px;
+    position: relative;
+    top: 32px;
+    left: 90px;
+    margin-bottom: 16px;
+}
+.sp-pictures-slide-text p{
+    width: 247px;
+    position: relative;
+    top: 32px;
+    left: 90px;
+}
 
 
 .sp-pictures-text {
@@ -1312,6 +1410,11 @@ footer {
     width: 247px;
     margin-top: 16px;
 }
+
+
+
+
+
 
 
 
