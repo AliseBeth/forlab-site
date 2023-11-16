@@ -84,3 +84,55 @@ function openMenu(event) {
         }
     }
 }
+
+
+
+
+
+// слайдер картинок страница спорт
+
+const sp_pics_left = document.querySelectorAll('.sp-pictures-btn-left');
+const sp_pics = document.querySelectorAll('.sp-pic-one')
+const sp_pic_chosen = document.querySelectorAll('.sp-pic');
+const sp_pics_right = document.querySelectorAll('.sp-pictures-btn-right');
+
+
+for (let i = 0; i < sp_pics.length; i++) {
+    sp_pics[i].addEventListener("mouseover", opFu);
+        function opFu(event) {   
+            let a = 0; 
+            sp_pics_left[i].addEventListener("click", clickLeft);
+            sp_pics_right[i].addEventListener("click", clickRight);
+        
+            function clickLeft(event) {
+                console.log(i)
+            }
+            function clickRight(event) {
+
+                console.log(i)
+                sp_pic_chosen[i].classList.add('hidden');
+
+
+                if (a >= sp_pic_chosen.length - 1) {
+                    a = 0;
+                    console.log(a, 'sp_pic_chosen.length')
+                    sp_pic_chosen[a].classList.remove('hidden');
+                } else {
+                    sp_pic_chosen[a + 1].classList.remove('hidden');
+                    a++
+                }                
+                
+                console.log(a, 'aaaaa')
+                
+            }
+        }
+        
+
+        }
+        
+
+
+
+
+
+
