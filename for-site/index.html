@@ -15,49 +15,185 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="header-media">
-                <div>
-                    <img src="../for-site/icon/youtube.svg" alt="def">
+        <nav class="header-container">
+            <div class="header-burger">
+                <button>
+                    <img class="head-bur" src="../for-site/icon/burger.svg" alt="def">
+                </button>
+                <button>
+                    <img class="head-cross hidden" src="../for-site/icon/cross.svg" alt="def">
+                </button>
+            </div>
+            <div class="header-info hidden">
+                <div class="header-menu">
+                    <button onclick="window.location.href='#welcome'">
+                        <h1>главная</h1>
+                    </button>
+                    <button onclick="window.location.href='#slides'">
+                        <h1>кейсы</h1>
+                    </button>
+                    <button onclick="window.location.href='#pictures'">
+                        <h1>преколы</h1>
+                    </button>
+                    <button onclick="window.location.href='#chapter'">
+                        <h1>мельпопс</h1>
+                    </button>
                 </div>
-                <div>
-                    <img src="../for-site/icon/vk.svg" alt="def">
-                </div>
-                <div>
-                    <img src="../for-site/icon/telegram.svg" alt="def">
+                <div class="header-contacts">
+                    <div class="header-contacts-logo">
+                        <h2>лого</h2>
+                    </div>
+                    <ul class="header-contacts-address">
+                        <li class="footer-address-city">
+                            <h3>москва:</h3>
+                            <ul>
+                                <li>ул. Бутырская, 76, стр. 1</li>
+                                <li>Телефон: +7 (499) 704-33-62</li>
+                            </ul>
+                        </li>
+                        <li class="footer-address-city">
+                            <h3>санкт-петербург:</h3>
+                            <ul>
+                                <li>Московский пр., 10-12</li>
+                                <li>Телефон: +7 (812) 389-44-14</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="header-burger">
-                <img src="../for-site/icon/burger.svg" alt="def">
+            <div class="header-social">
+                <div class="header-media">
+                    <div>
+                        <img src="../for-site/icon/youtube.svg" alt="def">
+                    </div>
+                    <div>
+                        <img src="../for-site/icon/vk.svg" alt="def">
+                    </div>
+                    <div>
+                        <img src="../for-site/icon/telegram.svg" alt="def">
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
 
     <main>
         <section id="welcome" class="welcome">
-            <div class="welcome-container">
-                <div>
-                    <h1>заголовок.</h1>
+            <div class="welcome-container">                
+                <div class="welcome-slide">
+                    <div class="welcome-slide-info">
+                        <div>
+                            <h1>мерч</h1>
+                        </div>
+                        <div>
+                            <h2>я длинный подзаголовок такой сижу тут значит</h2>
+                        </div>
+                    </div>
+                    <div class="welcome-slide-img">
+                        <img src="../for-site/img/krosh.jpg" alt="def">
+                    </div>
                 </div>
-                <div>
-                    <h2>я длинный подзаголовок такой сижу тут значит.</h2>
+                <div class="welcome-slide  hidden">
+                    <div class="welcome-slide-info">
+                        <div>
+                            <h1>фабрика</h1>
+                        </div>
+                        <div>
+                            <h2>еще один подзаголовок уже другой вот так вот чудеса конечно</h2>
+                        </div>
+                    </div>
+                    <div class="welcome-slide-img">
+                        <img src="../for-site/img/pin.jpg" alt="def">
+                    </div>
                 </div>
+                <div class="welcome-slide hidden">
+                    <div class="welcome-slide-info">
+                        <div>
+                            <h1>технология</h1>
+                        </div>
+                        <div>
+                            <h2>третий весьма занимательный лид</h2>
+                        </div>
+                    </div>
+                    <div class="welcome-slide-img">
+                        <img src="../for-site/img/los.jpg" alt="def">
+                    </div>
+                </div>
+            </div>
+            <div class="welcome-circles">
+                <div class="welcome-circle black"></div>
+                <div class="welcome-circle"></div>
+                <div class="welcome-circle"></div>
             </div>
         </section>
 
         <section id="slides" class="slides">
             <div class="slides-container">
                 <div class="slides-head">
-                    <h2>направления работы.</h2>
+                    <h2>мерч</h2>
                 </div>
                 <div class="slides-slide">
                     <ul>
                         <li>
+                            <a>
+                                <div class="slides-slide-word">
+                                    <h3>мода</h3>
+                                </div>
+                                <div class="slides-slide-hidden">
+                                    <h3>фешн из май профешн.</h3>
+                                    <p>Являясь всего лишь частью общей картины, предприниматели 
+                                        в сети интернет набирают популярность среди определенных 
+                                        слоев населения, а значит, должны быть заблокированы в 
+                                        рамках своих собственных рациональных ограничений. Как 
+                                        принято считать, интерактивные прототипы набирают 
+                                        популярность среди определенных слоев населения, а 
+                                        значит, должны быть преданы социально-демократической 
+                                        анафеме с учётом комплекса экономической целесообразности 
+                                        принимаемых решений глубокомысленных рассуждений с учётом 
+                                        комплекса экономической целесообразности принимаемых решений 
+                                        рассуждений.</p>
+                                </div>
+                                <div class="slides-slide-letter">
+                                    <h4>&#1084</h4>
+                                </div>
+                                <div class="slides-slide-img">
+                                    <img src="../for-site/img/img-default.png" alt="def">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../for-site/sport/index.html">
+                                <div class="slides-slide-word">
+                                    <h3>спорт</h3>
+                                </div>
+                                <div class="slides-slide-hidden">
+                                    <h3>зож на нож.</h3>
+                                    <p>Являясь всего лишь частью общей картины, предприниматели 
+                                        в сети интернет набирают популярность среди определенных 
+                                        слоев населения, а значит, должны быть заблокированы в 
+                                        рамках своих собственных рациональных ограничений. Как 
+                                        принято считать, интерактивные прототипы набирают 
+                                        популярность среди определенных слоев населения, а 
+                                        значит, должны быть преданы социально-демократической 
+                                        анафеме с учётом комплекса экономической целесообразности 
+                                        принимаемых решений глубокомысленных рассуждений с учётом 
+                                        комплекса экономической целесообразности принимаемых решений 
+                                        рассуждений.</p>
+                                </div>
+                                <div class="slides-slide-letter">
+                                    <h4>&#99</h4>
+                                </div>
+                                <div class="slides-slide-img">
+                                    <img src="../for-site/img/img-default.png" alt="def">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
                             <div class="slides-slide-word">
-                                <h3>следует отметить</h3>
+                                <h3>туризм</h3>
                             </div>
                             <div class="slides-slide-hidden">
-                                <h3>следует отметить еще такое, что уровень.</h3>
+                                <h3>подпивасный бард.</h3>
                                 <p>Являясь всего лишь частью общей картины, предприниматели 
                                     в сети интернет набирают популярность среди определенных 
                                     слоев населения, а значит, должны быть заблокированы в 
@@ -71,7 +207,7 @@
                                     рассуждений.</p>
                             </div>
                             <div class="slides-slide-letter">
-                                <h4>&#99</h4>
+                                <h4>&#1090</h4>
                             </div>
                             <div class="slides-slide-img">
                                 <img src="../for-site/img/img-default.png" alt="def">
@@ -79,60 +215,10 @@
                         </li>
                         <li>
                             <div class="slides-slide-word">
-                                <h3>береза</h3>
-                            </div>
-                            <div class="slides-slide-hidden">
-                                <h3>береза это хорошо, конечно.</h3>
-                                <p>Являясь всего лишь частью общей картины, предприниматели 
-                                    в сети интернет набирают популярность среди определенных 
-                                    слоев населения, а значит, должны быть заблокированы в 
-                                    рамках своих собственных рациональных ограничений. Как 
-                                    принято считать, интерактивные прототипы набирают 
-                                    популярность среди определенных слоев населения, а 
-                                    значит, должны быть преданы социально-демократической 
-                                    анафеме с учётом комплекса экономической целесообразности 
-                                    принимаемых решений глубокомысленных рассуждений с учётом 
-                                    комплекса экономической целесообразности принимаемых решений 
-                                    рассуждений.</p>
-                            </div>
-                            <div class="slides-slide-letter">
-                                <h4>&#1073</h4>
-                            </div>
-                            <div class="slides-slide-img">
-                                <img src="../for-site/img/img-default.png" alt="def">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="slides-slide-word">
-                                <h3>привет</h3>
-                            </div>
-                            <div class="slides-slide-hidden">
-                                <h3>привет у меня шиза.</h3>
-                                <p>Являясь всего лишь частью общей картины, предприниматели 
-                                    в сети интернет набирают популярность среди определенных 
-                                    слоев населения, а значит, должны быть заблокированы в 
-                                    рамках своих собственных рациональных ограничений. Как 
-                                    принято считать, интерактивные прототипы набирают 
-                                    популярность среди определенных слоев населения, а 
-                                    значит, должны быть преданы социально-демократической 
-                                    анафеме с учётом комплекса экономической целесообразности 
-                                    принимаемых решений глубокомысленных рассуждений с учётом 
-                                    комплекса экономической целесообразности принимаемых решений 
-                                    рассуждений.</p>
-                            </div>
-                            <div class="slides-slide-letter">
-                                <h4>&#1087</h4>
-                            </div>
-                            <div class="slides-slide-img">
-                                <img src="../for-site/img/img-default.png" alt="def">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="slides-slide-word">
-                                <h3>где живет червяк</h3>
+                                <h3>музыка</h3>
                             </div>                            
                             <div class="slides-slide-hidden">
-                                <h3>червяк в яблоке живет и в земле вот ему круто.</h3>
+                                <h3>шутки про басистов.</h3>
                                 <p>Являясь всего лишь частью общей картины, предприниматели 
                                     в сети интернет набирают популярность среди определенных 
                                     слоев населения, а значит, должны быть заблокированы в 
@@ -146,7 +232,7 @@
                                     рассуждений.</p>
                             </div>
                             <div class="slides-slide-letter">
-                                <h4>&#1095</h4>
+                                <h4>&#1084</h4>
                             </div>
                             <div class="slides-slide-img">
                                 <img src="../for-site/img/img-default.png" alt="def">
@@ -214,7 +300,7 @@
             <div class="info-container">
                 <div class="info-info">
                     <div class="info-head">
-                        <h2>о проекте.</h2>
+                        <h2>товар</h2>
                     </div>
                     <div class="info-text">
                         <p>И нет сомнений, что многие известные личности представляют 
@@ -250,8 +336,8 @@
                     <ul>
                         <li>
                             <div class="pictures-info-head">
-                                <h2>примеры кейсов прикольные вот тут красивые фоточки такие.</h2>
-                                <h4>я</h4>
+                                <h2>кейсы и всё таки я думаю здесь нужен длинный заголовок</h2>
+                                <h4>к</h4>
                             </div>
                         </li>
                         <li>
@@ -321,8 +407,8 @@
                         </li>
                         <li>
                             <div class="pictures-info-enother">
-                                <h2>20 000 SKU.</h2>
-                                <h3>Имеется спорная точка зрения, гласящая примерно следующее: 
+                                <h2>20 000 SKU</h2>
+                                <h3>имеется спорная точка зрения, гласящая примерно следующее: 
                                     действия представителей оппозиции преданы социально-демократической 
                                     анафеме и в равной степени предоставлены сами себе.</h3>
                             </div>
@@ -339,10 +425,12 @@
         <section id="chapter" class="chapter">
             <div class="chapter-container">
                 <div class="chapter-text">
-                    <h1>мельпопс.</h1>
-                    <h2>ах как вкусно амнямням.</h2>     
+                    <h1>производство</h1>
+                    <h2>ах как вкусно амнямням</h2>     
                 </div>   
-                <h4>&#62&#62</h4>
+                <button>
+                    <h4>&#62&#62</h4>
+                </button>
             </div>
         </section>
 
@@ -350,7 +438,7 @@
 
         <section id="person" class="person">
             <div class="person-container">
-                <h2>наркотики это плохо.</h2>
+                <h2>наркотики это плохо</h2>
                 <ul>
                     <li>
                         <div>
@@ -385,184 +473,296 @@
         <section id="partners" class="partners">
             <div class="partners-container">
                 <div class="partners-head">
-                    <h2>партнеры.</h2>
+                    <h2>партнеры</h2>
                 </div>
             </div>
             <div class="partners-moving">
                 <ul>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
-                    </li>
-                    <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
-                    </li>
-                    <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
-                    </li>
-                    <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
-                    </li>
-                    <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
-                    </li>
-                    <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
-                    </li>
-                    <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
-                    </li>
-                    <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
-                    </li>
-                    <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
-                    </li>
-                    <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
-                    </li>
-                    <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
-                    </li>
-                    <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
-                    </li>
-                    <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
-                    </li>
-                    <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                     <li>
-                        <img src="../for-site/img/img-default.png" alt="def">
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="../for-site/img/smesh.png" alt="def">
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -574,7 +774,7 @@
     <footer id="footer" class="footer">
         <div class="footer-container">
             <div class="footer-address">
-                <h2>контакты.</h2>
+                <h2>контакты</h2>
                 <ul>
                     <li class="footer-address-city">
                         <h3>москва:</h3>
@@ -606,5 +806,7 @@
         </div>
     </footer>
 </body>
+
+<script src="./script.js"></script>
 </html>
     
