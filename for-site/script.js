@@ -110,7 +110,7 @@ for (let i = 0; i < sp_pics.length; i++) {
             function clickRight(event) {
 
                 console.log(i)
-                sp_pic_chosen[i].classList.add('hidden');
+                sp_pic_chosen[a].classList.add('hidden');
 
 
                 if (a >= sp_pic_chosen.length - 1) {
