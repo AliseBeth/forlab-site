@@ -1146,14 +1146,15 @@ footer {
 
 
 /*СТРАНИЦА СПОРТ*/
-
+.sp-welcome {
+    overflow: hidden;   
+}
 .sp-welcome-container {
     width: 807px;
     padding: 161px 489px 102px 144px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    overflow: hidden;
 }
 .sp-welcome-container h4 {
     font-size: 869px;
@@ -1216,6 +1217,9 @@ footer {
     width: 1151px;
     height: 1279px;
 }
+.sp-pictures-info ul li{
+    position: relative;
+}
 .sp-pictures-info ul li div {
     transition: 0.4s ease-out 0.3s;
     cursor: pointer;
@@ -1224,6 +1228,7 @@ footer {
     filter: grayscale(0%);
     opacity: 1;
     transition: 0.4s ease-out 0.3s;
+    height: 100%;
 }
 .sp-pictures-btn {
     position: relative;
@@ -1231,7 +1236,7 @@ footer {
 }
 .sp-pictures-btn button {
     position: absolute;
-    z-index: 9;
+    z-index: 1;
     width: 47px;
     height: 100%;
     font-size: 28px;
@@ -1296,12 +1301,17 @@ footer {
 }
 
 
-.sp-pictures-info ul li:nth-child(3) div{
+.sp-pictures-info ul li:nth-child(3) div:nth-child(1) div{
     position: absolute;
     top: 320px;
     left: 0;
     width: 575px;
     height: 319px;
+}
+.sp-pictures-info ul li:nth-child(3) div:nth-child(1) .sp-pictures-slide-text{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .sp-pictures-info ul li:nth-child(3) div img{
     width: 575px;
@@ -1309,9 +1319,10 @@ footer {
     object-fit: cover;
     top: 0;
 }
-.sp-pictures-info ul li:nth-child(3) div:hover{
+.sp-pictures-info ul li:nth-child(3) div:hover div{
     z-index: 8;
     height: 639px;
+    transition: 0.4s ease-out 0.3s; 
 }
 
 
@@ -1319,8 +1330,8 @@ footer {
     position: absolute;
     top: 320px;
     left: 576px;
-    width: 287px;
-    height: 319px;
+    width: 255px;
+    height: 287px;
 }
 
 
@@ -1340,14 +1351,23 @@ footer {
     z-index: 8;
     width: 575px;
 }
-
-
-.sp-pictures-info ul li:nth-child(6) div{
+.sp-pictures-info ul li:nth-child(5) {
     position: absolute;
-    top: 320px;
-    left: 144px;
+    bottom: 0;
+}
+
+
+.sp-pictures-info ul li:nth-child(6) div:nth-child(1) div{
+    position: absolute;
+    top: 641px;
+    left: 288px;
     width: 575px;
     height: 319px;
+}
+.sp-pictures-info ul li:nth-child(6) div:nth-child(1) .sp-pictures-slide-text{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .sp-pictures-info ul li:nth-child(6) div img{
     width: 575px;
@@ -1358,6 +1378,7 @@ footer {
     z-index: 8;
     height: 639px;
 }
+
 
 .sp-pictures-info ul li:nth-child(7){
     position: absolute;
@@ -1382,11 +1403,17 @@ footer {
     z-index: 8;
     height: 639px;
 }
+.sp-pictures-info ul li:nth-child(8) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 
 .sp-pictures-slide-text {
-    position: relative;
     opacity: 0;
     transition: 0.2s;
+    position: absolute;
+    top: 0;
 }
 .sp-pictures-slide-text h3{
     width: 247px;
