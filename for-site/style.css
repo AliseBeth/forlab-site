@@ -375,7 +375,6 @@ nav div {
     animation: movingArrows 3s linear  infinite;
     height: 250px;
     overflow: hidden;
-
 }
 .slides-slide-hidden-arrows h4{
     color: #ffffff;
