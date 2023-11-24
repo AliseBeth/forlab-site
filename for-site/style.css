@@ -52,6 +52,7 @@ body {
     font-size: 14px;
     line-height: 16px;
     color: black;
+    cursor: url("icon/cursor-mouse.svg"), auto;
 }
 h1{
     font-size: 112px;
@@ -127,11 +128,10 @@ nav div {
     justify-content: space-between;
     align-items: center;
     width: 64px;
-    cursor: pointer;
 }
 
 .header-burger button {
-    cursor: pointer;
+    cursor: url("icon/cursor-finger.svg"), pointer;
     width: auto;
     display: flex;
     justify-content: center;
@@ -154,7 +154,7 @@ nav div {
 }
 .header-media div img {
     width: 29px;
-    cursor: pointer;
+    cursor: url("icon/cursor-finger.svg"), pointer;
     transition: 0.5s;
 }
 
@@ -177,7 +177,7 @@ nav div {
 }
 .header-menu h1 {
     width: min-content;
-    cursor: pointer;
+    cursor: url("icon/cursor-finger.svg"), pointer;
     transition: 0.5s;
 }
 .header-menu h1:hover {
@@ -220,7 +220,7 @@ nav div {
 
 
 .header-contacts-logo img{
-    cursor: pointer;
+    cursor: url("icon/cursor-finger.svg"), pointer;
     width: 211px;
     transition: 0.5s;
 }
@@ -310,7 +310,7 @@ nav div {
     height: 8px;
     border: 2px solid black;
     border-radius: 90px;
-    cursor: pointer;
+    cursor: url("icon/cursor-finger.svg"), pointer;
     transition: 0.4s;
     z-index: 10;
 }
@@ -418,13 +418,16 @@ nav div {
 }
 .slides-slide li {
     position: relative;
-    cursor: pointer;
     margin-right: 1px;
     flex-grow: 1;
     transition: 0.4s;
     width: auto;
     height: 642px;
     overflow: hidden;
+    cursor: url("icon/cursor-finger.svg"), pointer;
+}
+.slides-slide li a {
+    cursor: url("icon/cursor-finger.svg"), pointer;
 }
 .slides-slide li div {
     position: absolute;
@@ -507,7 +510,7 @@ nav div {
 
 .slides-slide li:hover {
     flex-grow: 5;
-    transition: 0.5s ease-out 0.2s;
+    transition: 0.5s ease-out 0.3s;
 }
 
 .slides-slide li:hover .slides-slide-img img{
@@ -566,7 +569,7 @@ nav div {
     overflow: hidden; 
     margin-left: auto;
     margin-right: auto;
-    cursor: pointer;
+    cursor: url("icon/cursor-finger.svg"), pointer;
     background-color: #e5e5e5;
     transition: 0.4s;
     width: 100%;
@@ -666,7 +669,7 @@ nav div {
     background-color: #3DB9FF;
     border: none;
     padding: 16px 55px;
-    cursor: pointer;
+    cursor: url("icon/cursor-finger.svg"), pointer;
     width: 287px;
     transition: 0.4s;
     margin-top: 80px;
@@ -701,7 +704,7 @@ nav div {
     object-fit: cover;
     filter: grayscale(100%);
     opacity: 0.3;
-    cursor: pointer;
+    cursor: url("icon/cursor-plus.svg"), pointer;
     object-fit: cover;
 }
 .pictures-info ul li {
@@ -933,7 +936,7 @@ nav div {
     background-color: #3DB9FF;
     border: none;
     padding: 16px 77px;
-    cursor: pointer;
+    cursor: url("icon/cursor-finger.svg"), pointer;
     margin-top: 80px;
     transition: 0.4s;
 }
@@ -1008,7 +1011,7 @@ nav div {
     opacity: 0.7;
     z-index: 1;
     transition: 0.4s;
-    cursor: pointer;
+    cursor: url("icon/cursor-finger.svg"), pointer;
     animation: movingArrows 3s linear  infinite;    
     font-size: 448px;
 
@@ -1087,7 +1090,7 @@ nav div {
     background-color: #3DB9FF;
     border: none;
     padding: 16px 77px;
-    cursor: pointer;
+    cursor: url("icon/cursor-finger.svg"), pointer;
     margin-top: 80px;
     transition: 0.4s;
     width: 288px;
@@ -1131,7 +1134,7 @@ nav div {
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
-    cursor: pointer;
+    cursor: url("icon/cursor-finger.svg"), pointer;
     transition: 0.4s;
     animation: startLinePartners 20s linear infinite;
     position: relative;
@@ -1208,7 +1211,7 @@ footer {
 }
 .footer-media img{
     margin-bottom: 31px;
-    cursor: pointer;
+    cursor: url("icon/cursor-finger.svg"), pointer;
 }
 .footer-media {
     margin-top: 225px;
@@ -1317,7 +1320,7 @@ footer {
 }
 .sp-pictures-info ul li div {
     transition: 0.4s ease-out 0.3s;
-    cursor: url("../for-site/img/0f.png"), pointer;
+    cursor: url("icon/cursor-plus.svg"), pointer;
 }
 .sp-pictures-info ul li:nth-child(n) div:hover img{
     filter: grayscale(0%);
@@ -1338,7 +1341,7 @@ footer {
     border: transparent;
     background-color: rgba(221, 220, 220, 0.239);
     color: #ffffff;
-    cursor: pointer;
+    cursor: url("icon/cursor-finger.svg"), pointer;
     opacity: 0;
 }
 .sp-pictures-btn button:hover {
@@ -1599,7 +1602,7 @@ footer {
     margin-right: 17px;
     display: flex;
     position: relative;
-    cursor: pointer;
+    cursor: url("icon/cursor-finger.svg"), pointer;
     overflow: hidden;
 }
 .techno-list li h4 {
@@ -1625,7 +1628,7 @@ footer {
     background-color: #3DB9FF;
     border: none;
     padding: 16px 77px;
-    cursor: pointer;
+    cursor: url("icon/cursor-finger.svg"), pointer;
     margin-top: 29px;
     margin-bottom: 113px;
     transition: 0.4s;
