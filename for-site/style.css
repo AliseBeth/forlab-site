@@ -507,7 +507,7 @@ nav div {
 
 .slides-slide li:hover {
     flex-grow: 5;
-    transition: 0.5s ease-out 0.2s;
+    transition: 0.5s ease-out 0.3s;
 }
 
 .slides-slide li:hover .slides-slide-img img{
