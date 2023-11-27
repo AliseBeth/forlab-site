@@ -361,7 +361,7 @@ nav div {
     height: 642px;
 }
 .slides-slide a {
-    color: #000000;
+    color: #ffffff;
 }
 .slides-slide-hidden {
     opacity: 0;
@@ -392,7 +392,7 @@ nav div {
 
 /*.slides-slide-hidden:before { 
     content: '';
-    width: 287px;
+    width: 144px;
     height: 159px;
     background-color: #ffffff;
     opacity: 0.2;
