@@ -12,8 +12,10 @@ for (let i = 0; i < welcome_btn.length; i++) {
             welcome_window[a].classList.add('hidden');
             welcome_btn[a].classList.remove('black');
         }
+        
         welcome_window[i].classList.remove('hidden');
         welcome_btn[i].classList.add('black');
+    
     }
 }
 
@@ -33,15 +35,16 @@ setInterval(function() {
             currentSlide = n;
         }
     };
-  
-    welcome_window[currentSlide].classList.remove('hidden');
-    welcome_btn[currentSlide].classList.add('black');
+    try {
+        welcome_window[currentSlide].classList.remove('hidden');
+        welcome_btn[currentSlide].classList.add('black');
     
-    currentSlide++;
+        currentSlide++;
 
-    if (currentSlide >= welcome_window.length) {
-        currentSlide = 0;
-    }
+        if (currentSlide >= welcome_window.length) {
+            currentSlide = 0;
+        } 
+    } catch(err) {}
     
 }, 3000); 
 
@@ -92,47 +95,40 @@ function openMenu(event) {
 // слайдер картинок страница спорт
 
 const sp_pics_left = document.querySelectorAll('.sp-pictures-btn-left');
-const sp_pics = document.querySelectorAll('.sp-pic-one')
-const sp_pic_chosen = document.querySelectorAll('.sp-pic');
+const sp_pic_container = document.querySelectorAll('.sp-pic-one')
+const sp_pic = document.querySelectorAll('.sp-pic');
 const sp_pics_right = document.querySelectorAll('.sp-pictures-btn-right');
 
 
-for (let i = 0; i < sp_pics.length; i++) {
-    sp_pics[i].addEventListener("mouseover", opFu);
-        function opFu(event) {   
-            let a = 0; 
-            sp_pics_left[i].addEventListener("click", clickLeft);
-            sp_pics_right[i].addEventListener("click", clickRight);
+for (let i = 0; i < sp_pic_container.length; i++) {
+
+    sp_pics_left[i].addEventListener("click", clickLeft);
+    sp_pics_right[i].addEventListener("click", clickRight);
+    let a = 0; 
+    function clickLeft(event) {
+        console.log(i)
+    }
+    function clickRight(event) {
+
+        console.log(i + 1, "номер окна")
         
-            function clickLeft(event) {
-                console.log(i)
-            }
-            function clickRight(event) {
 
-                console.log(i)
-                sp_pic_chosen[a].classList.add('hidden');
+        sp_pic[a + (i * 3)].classList.add('hidden');
 
-
-                if (a >= sp_pic_chosen.length - 1) {
-                    a = 0;
-                    console.log(a, 'sp_pic_chosen.length')
-                    sp_pic_chosen[a].classList.remove('hidden');
-                } else {
-                    sp_pic_chosen[a + 1].classList.remove('hidden');
-                    a++
-                }                
-                
-                console.log(a, 'aaaaa')
-                
-            }
+        console.log(a, "номер картинки перед иф")
+        if (a >= 2) {
+            a = 0;
+            sp_pic[a + (i * 3)].classList.remove('hidden');
+        } else {
+            sp_pic[(a + 1) + (i * 3)].classList.remove('hidden');
+            a++
+            console.log("отработал элс")
         }
+
+        console.log(sp_pic.length, "колво картинок")
+        console.log(a, "номер картинки")
+    }
         
 
-        }
-        
-
-
-
-
-
-
+                        
+}
