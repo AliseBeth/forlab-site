@@ -449,7 +449,7 @@ nav div {
 .slides-slide-letter h4 {
     font-size: 700px;
     font-family: 'Comforter', 'Arial', cursive;
-    font-weight: 500;
+    font-weight: 100;
 }
 .slides-slide-img {
     z-index: 0;
@@ -990,25 +990,63 @@ nav div {
 .products-info ul li a {
     position: relative;
     overflow: hidden;
+    width: 575px;
+    height: 639px;
 }
-.products-info ul li:nth-child(n + 2):nth-child(-n + 8) a h2 {
+.products-info ul li:nth-child(n + 2):nth-child(-n + 8) a h3 {
     position: fixed;
     z-index: 5;
     left: 0;
-    bottom: -287px;
+    top: 300px;
     opacity: 0;
     width: 287px;
+    text-align: center;
     cursor: url("icon/cursor-finger.svg"), pointer;
 } 
-.products-info ul li:nth-child(n + 8) a h2 {
+.products-info ul li:nth-child(n + 2):nth-child(-n + 8) a:after {
+    content: '';
+    width: 575px;
+    height: 639px;
+    background-color: #000000;
+    opacity: 0;
+    position: fixed;
+    z-index: 2;
+}
+.products-info ul li:nth-child(n + 2):nth-child(-n + 8) a:hover:after {
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    transition: 0.15s ease-out 0.15s;
+    cursor: url("icon/cursor-finger.svg"), pointer;
+}
+
+.products-info ul li:nth-child(n + 8) a h3 {
     position: fixed;
     z-index: 5;
     left: 0;
-    bottom: 32px;
+    top: -20px;
     opacity: 0;
     width: 287px;
+    text-align: center;
     cursor: url("icon/cursor-finger.svg"), pointer;
 }
+.products-info ul li:nth-child(n + 8) a:after {
+    content: '';
+    width: 575px;
+    height: 639px;
+    background-color: #000000;
+    opacity: 0;
+    position: fixed;
+    z-index: 2;
+}
+.products-info ul li:nth-child(n + 8) a:hover:after {
+    opacity: 0.2;
+    position: absolute;
+    bottom: 0;
+    transition: 0.15s ease-out 0.15s;
+    cursor: url("icon/cursor-finger.svg"), pointer;
+}
+
 
 .products-info ul li:nth-child(2) a:hover img{
     width: 575px;
@@ -1024,14 +1062,16 @@ nav div {
     margin-right: 1px;
     position: relative;
 }
-.products-info ul li:nth-child(2) a:hover h2 {
+.products-info ul li:nth-child(2) a:hover h3 {
     position: absolute;
     color: #ffffff;
     z-index: 5;
-    left: 32px;
-    bottom: -287px;
+    left: 140px;
     opacity: 1;
     transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(2) a:hover:after {
+    left: 0;
 }
 .products-info ul li:nth-child(3) a:hover img{
     width: 575px;
@@ -1047,14 +1087,16 @@ nav div {
 .products-info ul li:nth-child(3){
     width: 287px;
 }
-.products-info ul li:nth-child(3) a:hover h2 {
+.products-info ul li:nth-child(3) a:hover h3 {
     position: absolute;
     color: #ffffff;
     z-index: 5;
-    left: -255px;
-    bottom: -287px;
+    left: -140px;
     opacity: 1;
     transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(3) a:hover:after {
+    right: 0;
 }
 .products-info ul li:nth-child(4) a:hover img{
     width: 575px;
@@ -1071,14 +1113,16 @@ nav div {
     width: 287px;
     margin-left: 1px;
 }
-.products-info ul li:nth-child(4) a:hover h2 {
+.products-info ul li:nth-child(4) a:hover h3 {
     position: absolute;
     color: #000000;
     z-index: 5;
-    left: -255px;
-    bottom: -287px;
+    left: -140px;
     opacity: 1;
     transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(4) a:hover:after {
+    display: none;
 }
 .products-info ul li:nth-child(5) a:hover img{
     width: 575px;
@@ -1094,14 +1138,16 @@ nav div {
     width: 287px;
     position: relative;
 }
-.products-info ul li:nth-child(5) a:hover h2 {
+.products-info ul li:nth-child(5) a:hover h3 {
     position: absolute;
-    color: #ffffff;
+    color: #000000;
     z-index: 5;
-    left: 32px;
-    bottom: -287px;
+    left: 140px;
     opacity: 1;
     transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(5) a:hover:after {
+    display: none;
 }
 .products-info ul li:nth-child(6) a:hover img{
     width: 575px;
@@ -1119,14 +1165,16 @@ nav div {
     position: relative;
     margin-left: 1px;
 }
-.products-info ul li:nth-child(6) a:hover h2 {
+.products-info ul li:nth-child(6) a:hover h3 {
     position: absolute;
     color: #ffffff;
     z-index: 5;
-    left: 32px;
-    bottom: -287px;
+    left: 140px;
     opacity: 1;
     transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(6) a:hover:after {
+    left: 0;
 }
 .products-info ul li:nth-child(7) a:hover img{
     width: 575px;
@@ -1142,14 +1190,16 @@ nav div {
     width: 287px;
     margin-left: 1px;
 }
-.products-info ul li:nth-child(7) a:hover h2 {
+.products-info ul li:nth-child(7) a:hover h3 {
     position: absolute;
-    color: #000000;
+    color: #ffffff;
     z-index: 5;
-    left: -255px;
-    bottom: -287px;
+    left: -140px;
     opacity: 1;
     transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(7) a:hover:after {
+    display: none;
 }
 .products-info ul li:nth-child(8) a:hover img{
     width: 575px;
@@ -1166,14 +1216,16 @@ nav div {
     margin-left: 1px;
     position: relative;
 }
-.products-info ul li:nth-child(8) a:hover h2 {
+.products-info ul li:nth-child(8) a:hover h3 {
     position: absolute;
     color: #ffffff;
     z-index: 5;
-    left: -255px;
-    bottom: -287px;
+    left: -140px;
     opacity: 1;
     transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(8) a:hover:after {
+    right: 0;
 }
 .products-info ul li:nth-child(9) a:hover img{
     width: 575px;
@@ -1191,12 +1243,11 @@ nav div {
     margin-right: 1px;
     position: relative;
 }
-.products-info ul li:nth-child(9) a:hover h2 {
+.products-info ul li:nth-child(9) a:hover h3 {
     position: absolute;
-    color: #000000;
+    color: #ffffff;
     z-index: 5;
-    left: 32px;
-    bottom: 32px;
+    left: 140px;
     opacity: 1;
     transition: 0.3s ease-out 0.15s;
 }
@@ -1215,13 +1266,16 @@ nav div {
     width: 287px;
     position: relative;
 }
-.products-info ul li:nth-child(10) a:hover h2 {
+.products-info ul li:nth-child(10) a:hover h3 {
     position: absolute;
     color: #000000;
     z-index: 5;
-    left: 32px;
+    left: 140px;
     opacity: 1;
     transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(10) a:hover:after {
+    display: none;
 }
 .products-info ul li:nth-child(11) a:hover img{
     width: 575px;
@@ -1239,13 +1293,16 @@ nav div {
     position: relative;
     margin-left: 1px;
 }
-.products-info ul li:nth-child(11) a:hover h2 {
+.products-info ul li:nth-child(11) a:hover h3 {
     position: absolute;
     color: #000000;
     z-index: 5;
-    left: -255px;
+    left: -140px;
     opacity: 1;
     transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(11) a:hover:after {
+    display: none;
 }
 .products-info ul li:nth-child(12) a:hover img{
     width: 575px;
@@ -1263,13 +1320,16 @@ nav div {
     position: relative;
     margin-left: 1px;
 }
-.products-info ul li:nth-child(12) a:hover h2 {
+.products-info ul li:nth-child(12) a:hover h3 {
     position: absolute;
-    color: #000000;
+    color: #ffffff;
     z-index: 5;
-    left: -255px;
+    left: -140px;
     opacity: 1;
     transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(12) a:hover:after {
+    right: 0;
 }
 .products-info ul li:nth-child(13) a:hover img{
     width: 575px;
@@ -1287,11 +1347,11 @@ nav div {
     margin-right: 1px;
     position: relative;
 }
-.products-info ul li:nth-child(13) a:hover h2 {
+.products-info ul li:nth-child(13) a:hover h3 {
     position: absolute;
     color: #ffffff;
     z-index: 5;
-    left: 32px;
+    left: 140px;
     opacity: 1;
     transition: 0.3s ease-out 0.15s;
 }
@@ -1310,11 +1370,11 @@ nav div {
     width: 287px;
     position: relative;
 }
-.products-info ul li:nth-child(14) a:hover h2 {
+.products-info ul li:nth-child(14) a:hover h3 {
     position: absolute;
-    color: #000000;
+    color: #ffffff;
     z-index: 5;
-    left: 32px;
+    left: 140px;
     opacity: 1;
     transition: 0.3s ease-out 0.15s;
 }
@@ -1334,13 +1394,16 @@ nav div {
     position: relative;
     margin-left: 1px;
 }
-.products-info ul li:nth-child(15) a:hover h2 {
+.products-info ul li:nth-child(15) a:hover h3 {
     position: absolute;
     color: #ffffff;
     z-index: 5;
-    left: -255px;
+    left: -140px;
     opacity: 1;
     transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(15) a:hover:after {
+    right: 0;
 }
 .products-info ul li:nth-child(16) a:hover img{
     width: 575px;
@@ -1358,13 +1421,16 @@ nav div {
     position: relative;
     margin-left: 1px;
 }
-.products-info ul li:nth-child(16) a:hover h2 {
+.products-info ul li:nth-child(16) a:hover h3 {
     position: absolute;
-    color: #000000;
+    color: #ffffff;
     z-index: 5;
-    left: -255px;
+    left: -140px;
     opacity: 1;
     transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(16) a:hover:after {
+    right: 0;
 }
 
 
