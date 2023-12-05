@@ -987,10 +987,30 @@ nav div {
 .products-info ul li div{
     height: 319px;
 }
+.products-info ul li a {
+    position: relative;
+    overflow: hidden;
+}
+.products-info ul li:nth-child(n + 2):nth-child(-n + 8) a h2 {
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    bottom: -287px;
+    opacity: 0;
+    width: 287px;
+    cursor: url("icon/cursor-finger.svg"), pointer;
+} 
+.products-info ul li:nth-child(n + 8) a h2 {
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    bottom: 32px;
+    opacity: 0;
+    width: 287px;
+    cursor: url("icon/cursor-finger.svg"), pointer;
+}
 
-
-
-.products-info ul li:nth-child(2) div:hover img{
+.products-info ul li:nth-child(2) a:hover img{
     width: 575px;
     height: 639px;
     filter: grayscale(0%);
@@ -999,41 +1019,68 @@ nav div {
     z-index: 2;
     transition: 0.15s ease-out 0.15s;
 }
-.products-info ul li:nth-child(2) div{
+.products-info ul li:nth-child(2){
     width: 287px;
     margin-right: 1px;
     position: relative;
 }
-.products-info ul li:nth-child(3) div:hover img{
+.products-info ul li:nth-child(2) a:hover h2 {
+    position: absolute;
+    color: #ffffff;
+    z-index: 5;
+    left: 32px;
+    bottom: -287px;
+    opacity: 1;
+    transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(3) a:hover img{
     width: 575px;
     height: 639px;
     filter: grayscale(0%);
     opacity: 1;
     position: absolute;
     z-index: 2;
-    right: 289px;
+    right: 0px;
     top: 0;
     transition: 0.15s ease-out 0.15s;
 }
-.products-info ul li:nth-child(3) div{
+.products-info ul li:nth-child(3){
     width: 287px;
 }
-.products-info ul li:nth-child(4) div:hover img{
+.products-info ul li:nth-child(3) a:hover h2 {
+    position: absolute;
+    color: #ffffff;
+    z-index: 5;
+    left: -255px;
+    bottom: -287px;
+    opacity: 1;
+    transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(4) a:hover img{
     width: 575px;
     height: 639px;
     filter: grayscale(0%);
     opacity: 1;
     position: absolute;
     z-index: 2;
-    right: 1px;
+    right: 0;
     top: 0;
     transition: 0.15s ease-out 0.15s;
 }
-.products-info ul li:nth-child(4) div{
+.products-info ul li:nth-child(4){
     width: 287px;
     margin-left: 1px;
 }
-.products-info ul li:nth-child(5) div:hover img{
+.products-info ul li:nth-child(4) a:hover h2 {
+    position: absolute;
+    color: #000000;
+    z-index: 5;
+    left: -255px;
+    bottom: -287px;
+    opacity: 1;
+    transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(5) a:hover img{
     width: 575px;
     height: 639px;
     filter: grayscale(0%);
@@ -1043,11 +1090,20 @@ nav div {
     left: 0;
     transition: 0.15s ease-out 0.15s;
 }
-.products-info ul li:nth-child(5) div{
+.products-info ul li:nth-child(5){
     width: 287px;
     position: relative;
 }
-.products-info ul li:nth-child(6) div:hover img{
+.products-info ul li:nth-child(5) a:hover h2 {
+    position: absolute;
+    color: #ffffff;
+    z-index: 5;
+    left: 32px;
+    bottom: -287px;
+    opacity: 1;
+    transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(6) a:hover img{
     width: 575px;
     height: 639px;
     filter: grayscale(0%);
@@ -1058,26 +1114,44 @@ nav div {
     top: 0;
     transition: 0.15s ease-out 0.15s;
 }
-.products-info ul li:nth-child(6) div{
+.products-info ul li:nth-child(6){
     width: 287px;
     position: relative;
     margin-left: 1px;
 }
-.products-info ul li:nth-child(7) div:hover img{
+.products-info ul li:nth-child(6) a:hover h2 {
+    position: absolute;
+    color: #ffffff;
+    z-index: 5;
+    left: 32px;
+    bottom: -287px;
+    opacity: 1;
+    transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(7) a:hover img{
     width: 575px;
     height: 639px;
     filter: grayscale(0%);
     opacity: 1;
     position: absolute;
     z-index: 2;
-    right: 289px;
+    right: 0;
     transition: 0.15s ease-out 0.15s;
 }
-.products-info ul li:nth-child(7) div{
+.products-info ul li:nth-child(7){
     width: 287px;
     margin-left: 1px;
 }
-.products-info ul li:nth-child(8) div:hover img{
+.products-info ul li:nth-child(7) a:hover h2 {
+    position: absolute;
+    color: #000000;
+    z-index: 5;
+    left: -255px;
+    bottom: -287px;
+    opacity: 1;
+    transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(8) a:hover img{
     width: 575px;
     height: 639px;
     filter: grayscale(0%);
@@ -1087,12 +1161,21 @@ nav div {
     transition: 0.15s ease-out 0.15s;
     right: 0;
 }
-.products-info ul li:nth-child(8) div{
+.products-info ul li:nth-child(8){
     width: 287px;
     margin-left: 1px;
     position: relative;
 }
-.products-info ul li:nth-child(9) div:hover img{
+.products-info ul li:nth-child(8) a:hover h2 {
+    position: absolute;
+    color: #ffffff;
+    z-index: 5;
+    left: -255px;
+    bottom: -287px;
+    opacity: 1;
+    transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(9) a:hover img{
     width: 575px;
     height: 639px;
     filter: grayscale(0%);
@@ -1103,12 +1186,21 @@ nav div {
     bottom: 0;
     left: 0;
 }
-.products-info ul li:nth-child(9) div{
+.products-info ul li:nth-child(9){
     width: 287px;
     margin-right: 1px;
     position: relative;
 }
-.products-info ul li:nth-child(10) div:hover img{
+.products-info ul li:nth-child(9) a:hover h2 {
+    position: absolute;
+    color: #000000;
+    z-index: 5;
+    left: 32px;
+    bottom: 32px;
+    opacity: 1;
+    transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(10) a:hover img{
     width: 575px;
     height: 639px;
     filter: grayscale(0%);
@@ -1119,11 +1211,19 @@ nav div {
     left: 0;
     transition: 0.15s ease-out 0.15s;
 }
-.products-info ul li:nth-child(10) div{
+.products-info ul li:nth-child(10){
     width: 287px;
     position: relative;
 }
-.products-info ul li:nth-child(11) div:hover img{
+.products-info ul li:nth-child(10) a:hover h2 {
+    position: absolute;
+    color: #000000;
+    z-index: 5;
+    left: 32px;
+    opacity: 1;
+    transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(11) a:hover img{
     width: 575px;
     height: 639px;
     filter: grayscale(0%);
@@ -1134,12 +1234,20 @@ nav div {
     right: 0;
     transition: 0.15s ease-out 0.15s;
 }
-.products-info ul li:nth-child(11) div{
+.products-info ul li:nth-child(11){
     width: 287px;
     position: relative;
     margin-left: 1px;
 }
-.products-info ul li:nth-child(12) div:hover img{
+.products-info ul li:nth-child(11) a:hover h2 {
+    position: absolute;
+    color: #000000;
+    z-index: 5;
+    left: -255px;
+    opacity: 1;
+    transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(12) a:hover img{
     width: 575px;
     height: 639px;
     filter: grayscale(0%);
@@ -1150,12 +1258,20 @@ nav div {
     right: 0;
     transition: 0.15s ease-out 0.15s;
 }
-.products-info ul li:nth-child(12) div{
+.products-info ul li:nth-child(12){
     width: 287px;
     position: relative;
     margin-left: 1px;
 }
-.products-info ul li:nth-child(13) div:hover img{
+.products-info ul li:nth-child(12) a:hover h2 {
+    position: absolute;
+    color: #000000;
+    z-index: 5;
+    left: -255px;
+    opacity: 1;
+    transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(13) a:hover img{
     width: 575px;
     height: 639px;
     filter: grayscale(0%);
@@ -1166,12 +1282,20 @@ nav div {
     bottom: 0;
     left: 0;
 }
-.products-info ul li:nth-child(13) div{
+.products-info ul li:nth-child(13){
     width: 287px;
     margin-right: 1px;
     position: relative;
 }
-.products-info ul li:nth-child(14) div:hover img{
+.products-info ul li:nth-child(13) a:hover h2 {
+    position: absolute;
+    color: #ffffff;
+    z-index: 5;
+    left: 32px;
+    opacity: 1;
+    transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(14) a:hover img{
     width: 575px;
     height: 639px;
     filter: grayscale(0%);
@@ -1182,11 +1306,19 @@ nav div {
     left: 0;
     transition: 0.15s ease-out 0.15s;
 }
-.products-info ul li:nth-child(14) div{
+.products-info ul li:nth-child(14){
     width: 287px;
     position: relative;
 }
-.products-info ul li:nth-child(15) div:hover img{
+.products-info ul li:nth-child(14) a:hover h2 {
+    position: absolute;
+    color: #000000;
+    z-index: 5;
+    left: 32px;
+    opacity: 1;
+    transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(15) a:hover img{
     width: 575px;
     height: 639px;
     filter: grayscale(0%);
@@ -1197,12 +1329,20 @@ nav div {
     right: 0;
     transition: 0.15s ease-out 0.15s;
 }
-.products-info ul li:nth-child(15) div{
+.products-info ul li:nth-child(15){
     width: 287px;
     position: relative;
     margin-left: 1px;
 }
-.products-info ul li:nth-child(16) div:hover img{
+.products-info ul li:nth-child(15) a:hover h2 {
+    position: absolute;
+    color: #ffffff;
+    z-index: 5;
+    left: -255px;
+    opacity: 1;
+    transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(16) a:hover img{
     width: 575px;
     height: 639px;
     filter: grayscale(0%);
@@ -1213,10 +1353,18 @@ nav div {
     right: 0;
     transition: 0.15s ease-out 0.15s;
 }
-.products-info ul li:nth-child(16 ) div{
+.products-info ul li:nth-child(16){
     width: 287px;
     position: relative;
     margin-left: 1px;
+}
+.products-info ul li:nth-child(16) a:hover h2 {
+    position: absolute;
+    color: #000000;
+    z-index: 5;
+    left: -255px;
+    opacity: 1;
+    transition: 0.3s ease-out 0.15s;
 }
 
 
@@ -1227,7 +1375,7 @@ nav div {
     flex-direction: row;
     width: 1152px;
     flex-wrap: wrap;
-    overflow: hidden;
+
 }
 .products-info{
     position: relative;
@@ -1459,7 +1607,7 @@ footer {
 }
 .sp-welcome-container {
     width: 807px;
-    padding: 161px 489px 102px 144px;
+    padding: 161px 489px 100px 144px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -1517,7 +1665,7 @@ footer {
     width: 1151px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0px 144px 113px 145px;
+    padding: 0px 144px 0px 145px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1816,7 +1964,7 @@ footer {
     width: 1152px;
     margin-left: auto;
     margin-right: auto;
-    padding: 105px 144px 0px 144px;
+    padding: 100px 144px 0px 144px;
     display: flex;
     flex-direction: column;
     justify-content: center;
