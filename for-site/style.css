@@ -401,8 +401,8 @@ nav div {
     z-index: -1;
     transition: 0.4s;
 }*/
-.slides-slide-hidden h3 {
-    margin-bottom: 16px;
+.slides-slide-hidden h2 {
+    margin-bottom: 8px;
     transition: 0.4s;
 }
 .slides-slide-hidden p {
@@ -536,7 +536,7 @@ nav div {
     transition: 0.3s ease-out 0.3s;
 }
 .slides-slide li:hover .slides-slide-hidden{ 
-    margin: 332px 160px 0px;
+    margin: 310px 160px 0px;
     width: 400px;
     height: 212px;
     transition: 0s ease-out 0.3s;
