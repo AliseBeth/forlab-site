@@ -11,9 +11,71 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Comforter+Brush&display=swap" rel="stylesheet">
-    
+    <style>
+    .preloader {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: rgb(255, 255, 255);
+        z-index: 1001;
+    }
+    .preloader_row {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      width: 70px;
+      height: 70px;
+      animation: preloader-rotate 2s infinite linear;
+    }
+    .preloader_item {
+      position: absolute;
+      top: 0;
+      background-color: #3DB9FF;
+      border-radius: 100%;
+      width: 35px;
+      height: 35px;
+      animation: preloader-bounce 2s infinite ease-in-out;
+    }
+    .preloader_item:last-child {
+      top: auto;
+      bottom: 0;
+      animation-delay: -1s;
+    }
+    @keyframes preloader-rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    @keyframes preloader-bounce {
+      0%,
+      100% {
+        transform: scale(0);
+      }
+      50% {
+        transform: scale(1);
+      }
+    }
+    .loaded_hiding .preloader {
+      transition: 0.3s opacity;
+      opacity: 0;
+    }
+    .loaded .preloader {
+      display: none;
+    }
+  </style>
+
+
 </head>
 <body>
+    <div class="preloader">
+        <div class="preloader_row">
+          <div class="preloader_item"></div>
+          <div class="preloader_item"></div>
+        </div>
+    </div>
+
     <header>
         <nav class="header-container">
             <div class="header-burger">
@@ -148,7 +210,7 @@
                                     <h3>спорт</h3>
                                 </div>
                                 <div class="slides-slide-hidden">
-                                    <h3>спорт</h3>
+                                    <h2>спорт</h2>
                                     <p>болельщик</p>
                                     <p>чемпион</p>
                                     <p>любитель</p>
@@ -170,7 +232,7 @@
                                     <h3>туризм</h3>
                                 </div>
                                 <div class="slides-slide-hidden">
-                                    <h3>туризм</h3>
+                                    <h2>туризм</h2>
                                     <p>место</p>
                                     <p>событие</p>
                                     <p>магнитик</p>
@@ -192,7 +254,7 @@
                                     <h3>мода</h3>
                                 </div>
                                 <div class="slides-slide-hidden">
-                                    <h3>fashion</h3>
+                                    <h2>fashion</h2>
                                     <p>профессиональный мерч</p>
                                     <div class="slides-slide-hidden-arrows">
                                         <h4>&#62&#62</h4>
@@ -212,7 +274,7 @@
                                     <h3>музыка</h3>
                                 </div>                            
                                 <div class="slides-slide-hidden">
-                                    <h3>музыка</h3>
+                                    <h2>музыка</h2>
                                     <p>концерт</p>
                                     <p>квартирник</p>
                                     <p>фестиваль</p>
@@ -429,12 +491,13 @@
                     <ul>
                         <li>
                             <div class="products-info-head">
-                                <h2>товар на любую тему</h2>
+                                <h2>каталог товаров</h2>
                                 <h4>т</h4>
                             </div>
                         </li>
                         <li>
                             <a href="https://gifts.ru/catalog/novyy-god" target="_blank">
+                                <h3>новогодние товары</h3>
                                 <div>
                                     <img src="img/products/product-1.jpg" alt="def">
                                 </div>
@@ -442,6 +505,7 @@
                         </li>
                         <li>
                             <a href="https://gifts.ru/catalog/ejednevniki-i-bloknoty" target="_blank">
+                                <h3>блокноты и ежедневники</h3>
                                 <div>
                                     <img src="img/products/product-2.jpg" alt="def">
                                 </div>
@@ -449,6 +513,7 @@
                         </li>
                         <li>
                             <a href="https://gifts.ru/catalog/upakovka" target="_blank">
+                                <h3>упаковка</h3>
                                 <div>
                                     <img src="img/products/product-3.jpg" alt="def">
                                 </div>
@@ -456,6 +521,7 @@
                         </li>
                         <li>
                             <a href="https://gifts.ru/catalog/odejda" target="_blank">
+                                <h3>одежда</h3>
                                 <div>
                                     <img src="img/products/product-4.jpg" alt="def">
                                 </div>
@@ -463,6 +529,7 @@
                         </li>
                         <li>
                             <a href="https://gifts.ru/catalog/posuda" target="_blank">
+                                <h3>посуда</h3>
                                 <div>
                                     <img src="img/products/product-5.jpg" alt="def">
                                 </div>
@@ -470,6 +537,7 @@
                         </li>
                         <li>
                             <a href="https://gifts.ru/catalog/sjedobnye-podarki" target="_blank">
+                                <h3>съедобные подарки</h3>
                                 <div>
                                     <img src="img/products/product-6.jpg" alt="def">
                                 </div>
@@ -477,6 +545,7 @@
                         </li>
                         <li>
                             <a href="https://gifts.ru/catalog/ruchki" target="_blank">
+                                <h3>ручки</h3>
                                 <div>
                                     <img src="img/products/product-7.jpg" alt="def">
                                 </div>
@@ -484,6 +553,7 @@
                         </li>
                         <li>
                             <a href="https://gifts.ru/catalog/sumki" target="_blank">
+                                <h3>сумки</h3>
                                 <div>
                                     <img src="img/products/product-8.jpg" alt="def">
                                 </div>
@@ -491,6 +561,7 @@
                         </li>
                         <li>
                             <a href="https://gifts.ru/catalog/zonty" target="_blank">
+                                <h3>зонты</h3>
                                 <div>
                                     <img src="img/products/product-9.jpg" alt="def">
                                 </div>
@@ -498,6 +569,7 @@
                         </li>
                         <li>
                             <a href="https://gifts.ru/catalog/elektronika" target="_blank">
+                                <h3>электроника</h3>
                                 <div>
                                     <img src="img/products/product-10.jpg" alt="def">
                                 </div>
@@ -505,6 +577,7 @@
                         </li>
                         <li>
                             <a href="https://gifts.ru/catalog/dom" target="_blank">
+                                <h3>товары для дома</h3>
                                 <div>
                                     <img src="img/products/product-11.jpg" alt="def">
                                 </div>
@@ -512,6 +585,7 @@
                         </li>
                         <li>
                             <a href="https://gifts.ru/catalog/otdyh" target="_blank">
+                                <h3>товары для отдыха</h3>
                                 <div>
                                     <img src="img/products/product-12.jpg" alt="def">
                                 </div>
@@ -519,6 +593,7 @@
                         </li>
                         <li>
                             <a href="https://gifts.ru/catalog/sportivnye-tovary" target="_blank">
+                                <h3>спортивные товары</h3>
                                 <div>
                                     <img src="img/products/product-13.jpg" alt="def">
                                 </div>
@@ -526,6 +601,7 @@
                         </li>
                         <li>
                             <a href="https://gifts.ru/catalog/nagrady" target="_blank">
+                                <h3>награды</h3>
                                 <div>
                                     <img src="img/products/product-14.jpg" alt="def">
                                 </div>
@@ -533,6 +609,7 @@
                         </li>
                         <li>
                             <a href="https://gifts.ru/catalog/podarochnye-nabory" target="_blank">
+                                <h3>подарочные наборы</h3>
                                 <div>
                                     <img src="img/products/product-15.jpg" alt="def">
                                 </div>
@@ -541,7 +618,9 @@
                     </ul>
                 </div>
                 <div class="products-button">
-                    <button>смотреть все товары</button>
+                    <a href="https://gifts.ru/" target="_blank">
+                        <button>смотреть все товары</button>
+                    </a>
                 </div>
             </div>
         </section>
@@ -560,14 +639,14 @@
                                     <h3>спорт</h3>
                                 </div>
                                 <div class="slides-slide-hidden">
-                                    <h3>нанесение</h3>
+                                    <h2>нанесение</h2>
                                     <p></p> 
-                                    <div class="slides-slide-hidden-arrows">
+                                    <div class="slides-slide-hidden-arrows hidden">
                                         <h4>&#62&#62</h4>
                                     </div>
                                 </div>
-                                <div class="slides-slide-letter hidden">
-                                    <h4>&#99</h4>
+                                <div class="slides-slide-letter ">
+                                    <h4>н</h4>
                                 </div>
                                 <div class="slides-slide-img ">
                                     <img src="img/proizvod-2.jpg" alt="def">
@@ -580,14 +659,14 @@
                                     <h3>туризм</h3>
                                 </div>
                                 <div class="slides-slide-hidden">
-                                    <h3>кастомизация</h3>
+                                    <h2>кастомизация</h2>
                                     <p></p>
-                                    <div class="slides-slide-hidden-arrows">
+                                    <div class="slides-slide-hidden-arrows hidden">
                                         <h4>&#62&#62</h4>
                                     </div>
                                 </div>
-                                <div class="slides-slide-letter hidden">
-                                    <h4>&#1090</h4>
+                                <div class="slides-slide-letter">
+                                    <h4>к</h4>
                                 </div>
                                 <div class="slides-slide-img">
                                     <img src="img/proizvod-1.jpg" alt="def">
@@ -600,14 +679,14 @@
                                     <h3>мода</h3>
                                 </div>
                                 <div class="slides-slide-hidden">
-                                    <h3>фабрика вязания</h3>
+                                    <h2>фабрика вязания</h2>
                                     <p></p>
-                                    <div class="slides-slide-hidden-arrows">
+                                    <div class="slides-slide-hidden-arrows hidden">
                                         <h4>&#62&#62</h4>
                                     </div>
                                 </div>
-                                <div class="slides-slide-letter hidden">
-                                    <h4>f</h4>
+                                <div class="slides-slide-letter">
+                                    <h4>ф</h4>
                                 </div>
                                 <div class="slides-slide-img">
                                     <img src="img/proizvod-3.jpg" alt="def">
@@ -620,14 +699,14 @@
                                     <h3>музыка</h3>
                                 </div>                            
                                 <div class="slides-slide-hidden">
-                                    <h3>упаковка</h3>
+                                    <h2>упаковка</h2>
                                     <p></p>
-                                    <div class="slides-slide-hidden-arrows">
+                                    <div class="slides-slide-hidden-arrows hidden">
                                         <h4>&#62&#62</h4>
                                     </div>
                                 </div>
-                                <div class="slides-slide-letter hidden">
-                                    <h4>&#1084</h4>
+                                <div class="slides-slide-letter">
+                                    <h4>у</h4>
                                 </div>
                                 <div class="slides-slide-img">
                                     <img src="img/proizvod-4.jpg" alt="def">
@@ -643,35 +722,37 @@
 
         <section id="person" class="person">
             <div class="person-container">
-                <h2>основные этапы производства</h2>
+                <h2>надежный поставщик ретейла</h2>
                 <ul>
+                    <li>
+                        <div>
+                            <img src="img/person/person-1.jpg" alt="def">
+                        </div>
+                        <h3>интерактивность</h3>
+                        <p>Удобная online-система работы с клиентами – трансляция 
+                            актуальных остатков на складах и в пути, система резервирования, 
+                            отслеживание всех этапов прохождения заказа от запуска до отгрузки.</p>
+                    </li>
                     <li>
                         <div>
                             <img src="img/person/person-2.jpg" alt="def">
                         </div>
-                        <h3>идея.</h3>
-                        <p>С другой стороны, перспективное планирование позволяет 
-                            выполнить важные задания по 
-                            разработке приоретизации разума над эмоциями.</p>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="img/person/person-7.jpg" alt="def">
-                        </div>
-                        <h3>дизайн.</h3>
-                        <p>С другой стороны, перспективное 
-                            планирование позволяет выполнить важные задания.</p>
+                        <h3>качество</h3>
+                        <p>Постоянная работа по совершенствованию качества работы и 
+                            расширению мощностей.</p>
                     </li>
                     <li>
                         <div>
                             <img src="img/person/person-3.jpg" alt="def">
                         </div>
-                        <h3>нанесение.</h3>
-                        <p>Но понимание сути ресурсосберегающих технологий однозначно фиксирует 
-                            необходимость прогресса профессионального сообщества.</p>
+                        <h3>быстрая доставка</h3>
+                        <p>Выстроенные бизнес-процессы сборки, отгрузки и доставки 
+                            продукции по всей России.</p>
                     </li>
                 </ul>
-                <button>зож это сюда</button>
+                <a href="https://gifts.ru/become_dealer" target="_blank">
+                    <button>узнать условия работы</button>
+                </a>
             </div>
         </section>
 
@@ -1000,14 +1081,14 @@
                 <h2>контакты</h2>
                 <ul>
                     <li class="footer-address-city">
-                        <h3>москва:</h3>
+                        <h3>москва</h3>
                         <ul>
                             <li>ул. Бутырская, 76, стр. 1</li>
                             <li>Телефон: +7 (499) 704-33-62</li>
                         </ul>
                     </li>
                     <li class="footer-address-city">
-                        <h3>санкт-петербург:</h3>
+                        <h3>санкт-петербург</h3>
                         <ul>
                             <li>Московский пр., 10-12</li>
                             <li>Телефон: +7 (812) 389-44-14</li>
@@ -1029,7 +1110,15 @@
         </div>
     </footer>
 </body>
-
+<script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+</script>
 <script src="script.js"></script>
 </html>
     

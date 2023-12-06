@@ -11,10 +11,69 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Comforter+Brush&display=swap" rel="stylesheet">
-    
+    <style>
+        .preloader {
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: rgb(255, 255, 255);
+            z-index: 1001;
+        }
+        .preloader_row {
+          position: relative;
+          top: 50%;
+          left: 50%;
+          width: 70px;
+          height: 70px;
+          animation: preloader-rotate 2s infinite linear;
+        }
+        .preloader_item {
+          position: absolute;
+          top: 0;
+          background-color: #3DB9FF;
+          border-radius: 100%;
+          width: 35px;
+          height: 35px;
+          animation: preloader-bounce 2s infinite ease-in-out;
+        }
+        .preloader_item:last-child {
+          top: auto;
+          bottom: 0;
+          animation-delay: -1s;
+        }
+        @keyframes preloader-rotate {
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+        @keyframes preloader-bounce {
+          0%,
+          100% {
+            transform: scale(0);
+          }
+          50% {
+            transform: scale(1);
+          }
+        }
+        .loaded_hiding .preloader {
+          transition: 0.3s opacity;
+          opacity: 0;
+        }
+        .loaded .preloader {
+          display: none;
+        }
+      </style>
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="preloader_row">
+          <div class="preloader_item"></div>
+          <div class="preloader_item"></div>
+        </div>
+    </div>
     <header>
         <nav class="header-container">
             <div class="header-burger">
@@ -238,7 +297,7 @@
                         </li>
                         <li>
                             <div class="sp-pictures-text">
-                                <h2>75 000 вообще не шарю, что происходит</h2>
+                                <h2>75 000 нервных клеток минус</h2>
                             </div>
                         </li>
                         <li>
@@ -273,74 +332,173 @@
             </div>
         </section>
 
+        <section id="factory" class="slides">
+            <div class="slides-container">
+                <div class="slides-head">
+                    <h2>производство</h2>
+                </div>
+                <div class="slides-slide">
+                    <ul>
+                        <li>
+                            <a>
+                                <div class="slides-slide-word hidden">
+                                    <h3>спорт</h3>
+                                </div>
+                                <div class="slides-slide-hidden">
+                                    <h2>нанесение</h2>
+                                    <p></p> 
+                                    <div class="slides-slide-hidden-arrows hidden">
+                                        <h4>&#62&#62</h4>
+                                    </div>
+                                </div>
+                                <div class="slides-slide-letter ">
+                                    <h4>н</h4>
+                                </div>
+                                <div class="slides-slide-img ">
+                                    <img src="../img/proizvod-2.jpg" alt="def">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <div class="slides-slide-word hidden">
+                                    <h3>туризм</h3>
+                                </div>
+                                <div class="slides-slide-hidden">
+                                    <h2>кастомизация</h2>
+                                    <p></p>
+                                    <div class="slides-slide-hidden-arrows hidden">
+                                        <h4>&#62&#62</h4>
+                                    </div>
+                                </div>
+                                <div class="slides-slide-letter">
+                                    <h4>к</h4>
+                                </div>
+                                <div class="slides-slide-img">
+                                    <img src="../img/proizvod-1.jpg" alt="def">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <div class="slides-slide-word hidden">
+                                    <h3>мода</h3>
+                                </div>
+                                <div class="slides-slide-hidden">
+                                    <h2>фабрика вязания</h2>
+                                    <p></p>
+                                    <div class="slides-slide-hidden-arrows hidden">
+                                        <h4>&#62&#62</h4>
+                                    </div>
+                                </div>
+                                <div class="slides-slide-letter">
+                                    <h4>ф</h4>
+                                </div>
+                                <div class="slides-slide-img">
+                                    <img src="../img/proizvod-3.jpg" alt="def">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <div class="slides-slide-word hidden">
+                                    <h3>музыка</h3>
+                                </div>                            
+                                <div class="slides-slide-hidden">
+                                    <h2>упаковка</h2>
+                                    <p></p>
+                                    <div class="slides-slide-hidden-arrows hidden">
+                                        <h4>&#62&#62</h4>
+                                    </div>
+                                </div>
+                                <div class="slides-slide-letter">
+                                    <h4>у</h4>
+                                </div>
+                                <div class="slides-slide-img">
+                                    <img src="../img/proizvod-4.jpg" alt="def">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
         <section id="techno" class="techno">
             <div class="techno-container">
-                <h2>товарное количество товара</h2>
+                <h2>каталог тематических товаров</h2>
                 <div class="techno-img">
                     <img src="img/techno/techno-1.jpg" alt="def">
                 </div>
                 <div class="techno-list">
                     <ul>
                         <li>
-                            <div>
-                                <h4>&#62</h4>
+                            <a href="https://gifts.ru/catalog/futbolki" target="_blank">
                                 <div>
-                                    <img src="img/techno/img-default.png" alt="def">
+                                    <h4>&#62</h4>
+                                    <div>
+                                        <img src="img/techno/img-default.png" alt="def">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="techno-text">
-                                <h3>выбранный</h3>
-                                <p>С другой стороны, перспективное планирование 
-                                    позволяет выполнить важные задания по разработке 
-                                    приоретизации разума над эмоциями. Принимая во внимание 
-                                    показатели успешности, 
-                                    современная методология разработки создаёт.</p>
-                            </div>
+                                <div class="techno-text">
+                                    <h3>футболки</h3>
+                                    <p>С другой стороны, перспективное планирование 
+                                        позволяет выполнить важные задания по разработке 
+                                        приоретизации разума над эмоциями. Принимая во внимание 
+                                        показатели успешности, 
+                                        современная методология разработки создаёт.</p>
+                                </div>
+                            </a>
                         </li>
                         <li>
-                            <div>
-                                <h4>&#62</h4>
+                            <a href="https://gifts.ru/catalog/sportivnyi-inventar" target="_blank">
                                 <div>
-                                    <img src="img/techno/img-default.png" alt="def">
+                                    <h4>&#62</h4>
+                                    <div>
+                                        <img src="img/techno/img-default.png" alt="def">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="techno-text">
-                                <h3>граждане</h3>
-                                <p>Следует отметить, что высококачественный прототип 
-                                    будущего проекта однозначно фиксирует.</p>
-                            </div>
+                                <div class="techno-text">
+                                    <h3>инвентарь</h3>
+                                    <p>Следует отметить, что высококачественный прототип 
+                                        будущего проекта однозначно фиксирует.</p>
+                                </div>
+                            </a>
                         </li>
                         <li>
-                            <div>
-                                <h4>&#62</h4>
+                            <a href="https://gifts.ru/catalog/s-butylka-dlya-vody" target="_blank">
                                 <div>
-                                    <img src="img/techno/img-default.png" alt="def">
+                                    <h4>&#62</h4>
+                                    <div>
+                                        <img src="img/techno/img-default.png" alt="def">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="techno-text">
-                                <h3>пациент психушки</h3>
-                                <p>А также интерактивные прототипы, вне зависимости от их уровня, 
-                                    должны быть в равной степени предоставлены сами себе!</p>
-                            </div>
+                                <div class="techno-text">
+                                    <h3>бутылки для воды</h3>
+                                    <p>А также интерактивные прототипы, вне зависимости от их уровня, 
+                                        должны быть в равной степени предоставлены сами себе!</p>
+                                </div>
+                            </a>
                         </li>
                         <li>
-                            <div>
-                                <h4>&#62</h4>
+                            <a href="https://gifts.ru/catalog/tovary-dlya-fitnesa" target="_blank">
                                 <div>
-                                    <img src="img/techno/img-default.png" alt="def">
+                                    <h4>&#62</h4>
+                                    <div>
+                                        <img src="img/techno/img-default.png" alt="def">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="techno-text">
-                                <h3>качественный</h3>
-                                <p>Вот вам яркий пример современных тенденций — 
-                                    семантический разбор внешних противодействий прекрасно 
-                                    подходит для реализации благоприятных перспектив.</p>
-                            </div>
+                                <div class="techno-text">
+                                    <h3>фитнес</h3>
+                                    <p>Вот вам яркий пример современных тенденций — 
+                                        семантический разбор внешних противодействий прекрасно 
+                                        подходит для реализации благоприятных перспектив.</p>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </div>
-                <button>кнопочка тут вот такая</button>
+                <button>заказать нанесение</button>
             </div>
         </section>
     </main>
@@ -352,14 +510,14 @@
                 <h2>контакты</h2>
                 <ul>
                     <li class="footer-address-city">
-                        <h3>москва:</h3>
+                        <h3>москва</h3>
                         <ul>
                             <li>ул. Бутырская, 76, стр. 1</li>
                             <li>Телефон: +7 (499) 704-33-62</li>
                         </ul>
                     </li>
                     <li class="footer-address-city">
-                        <h3>санкт-петербург:</h3>
+                        <h3>санкт-петербург</h3>
                         <ul>
                             <li>Московский пр., 10-12</li>
                             <li>Телефон: +7 (812) 389-44-14</li>
@@ -381,7 +539,15 @@
         </div>
     </footer>
 </body>
-
+<script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+</script>
 <script src="../script.js"></script>
 
 </html>

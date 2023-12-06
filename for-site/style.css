@@ -401,8 +401,8 @@ nav div {
     z-index: -1;
     transition: 0.4s;
 }*/
-.slides-slide-hidden h3 {
-    margin-bottom: 16px;
+.slides-slide-hidden h2 {
+    margin-bottom: 8px;
     transition: 0.4s;
 }
 .slides-slide-hidden p {
@@ -536,7 +536,7 @@ nav div {
     transition: 0.3s ease-out 0.3s;
 }
 .slides-slide li:hover .slides-slide-hidden{ 
-    margin: 332px 160px 0px;
+    margin: 310px 160px 0px;
     width: 400px;
     height: 212px;
     transition: 0s ease-out 0.3s;
@@ -987,10 +987,68 @@ nav div {
 .products-info ul li div{
     height: 319px;
 }
+.products-info ul li a {
+    position: relative;
+    overflow: hidden;
+    width: 575px;
+    height: 639px;
+}
+.products-info ul li:nth-child(n + 2):nth-child(-n + 8) a h3 {
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 300px;
+    opacity: 0;
+    width: 287px;
+    text-align: center;
+    cursor: url("icon/cursor-finger.svg"), pointer;
+} 
+.products-info ul li:nth-child(n + 2):nth-child(-n + 8) a:after {
+    content: '';
+    width: 575px;
+    height: 639px;
+    background-color: #000000;
+    opacity: 0;
+    position: fixed;
+    z-index: 2;
+}
+.products-info ul li:nth-child(n + 2):nth-child(-n + 8) a:hover:after {
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    transition: 0.15s ease-out 0.15s;
+    cursor: url("icon/cursor-finger.svg"), pointer;
+}
+
+.products-info ul li:nth-child(n + 8) a h3 {
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: -20px;
+    opacity: 0;
+    width: 287px;
+    text-align: center;
+    cursor: url("icon/cursor-finger.svg"), pointer;
+}
+.products-info ul li:nth-child(n + 8) a:after {
+    content: '';
+    width: 575px;
+    height: 639px;
+    background-color: #000000;
+    opacity: 0;
+    position: fixed;
+    z-index: 2;
+}
+.products-info ul li:nth-child(n + 8) a:hover:after {
+    opacity: 0.2;
+    position: absolute;
+    bottom: 0;
+    transition: 0.15s ease-out 0.15s;
+    cursor: url("icon/cursor-finger.svg"), pointer;
+}
 
 
-
-.products-info ul li:nth-child(2) div:hover img{
+.products-info ul li:nth-child(2) a:hover img{
     width: 575px;
     height: 639px;
     filter: grayscale(0%);
@@ -999,41 +1057,74 @@ nav div {
     z-index: 2;
     transition: 0.15s ease-out 0.15s;
 }
-.products-info ul li:nth-child(2) div{
+.products-info ul li:nth-child(2){
     width: 287px;
     margin-right: 1px;
     position: relative;
 }
-.products-info ul li:nth-child(3) div:hover img{
+.products-info ul li:nth-child(2) a:hover h3 {
+    position: absolute;
+    color: #ffffff;
+    z-index: 5;
+    left: 140px;
+    opacity: 1;
+    transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(2) a:hover:after {
+    left: 0;
+}
+.products-info ul li:nth-child(3) a:hover img{
     width: 575px;
     height: 639px;
     filter: grayscale(0%);
     opacity: 1;
     position: absolute;
     z-index: 2;
-    right: 289px;
+    right: 0px;
     top: 0;
     transition: 0.15s ease-out 0.15s;
 }
-.products-info ul li:nth-child(3) div{
+.products-info ul li:nth-child(3){
     width: 287px;
 }
-.products-info ul li:nth-child(4) div:hover img{
+.products-info ul li:nth-child(3) a:hover h3 {
+    position: absolute;
+    color: #ffffff;
+    z-index: 5;
+    left: -140px;
+    opacity: 1;
+    transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(3) a:hover:after {
+    right: 0;
+}
+.products-info ul li:nth-child(4) a:hover img{
     width: 575px;
     height: 639px;
     filter: grayscale(0%);
     opacity: 1;
     position: absolute;
     z-index: 2;
-    right: 1px;
+    right: 0;
     top: 0;
     transition: 0.15s ease-out 0.15s;
 }
-.products-info ul li:nth-child(4) div{
+.products-info ul li:nth-child(4){
     width: 287px;
     margin-left: 1px;
 }
-.products-info ul li:nth-child(5) div:hover img{
+.products-info ul li:nth-child(4) a:hover h3 {
+    position: absolute;
+    color: #000000;
+    z-index: 5;
+    left: -140px;
+    opacity: 1;
+    transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(4) a:hover:after {
+    display: none;
+}
+.products-info ul li:nth-child(5) a:hover img{
     width: 575px;
     height: 639px;
     filter: grayscale(0%);
@@ -1043,11 +1134,22 @@ nav div {
     left: 0;
     transition: 0.15s ease-out 0.15s;
 }
-.products-info ul li:nth-child(5) div{
+.products-info ul li:nth-child(5){
     width: 287px;
     position: relative;
 }
-.products-info ul li:nth-child(6) div:hover img{
+.products-info ul li:nth-child(5) a:hover h3 {
+    position: absolute;
+    color: #000000;
+    z-index: 5;
+    left: 140px;
+    opacity: 1;
+    transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(5) a:hover:after {
+    display: none;
+}
+.products-info ul li:nth-child(6) a:hover img{
     width: 575px;
     height: 639px;
     filter: grayscale(0%);
@@ -1058,26 +1160,48 @@ nav div {
     top: 0;
     transition: 0.15s ease-out 0.15s;
 }
-.products-info ul li:nth-child(6) div{
+.products-info ul li:nth-child(6){
     width: 287px;
     position: relative;
     margin-left: 1px;
 }
-.products-info ul li:nth-child(7) div:hover img{
+.products-info ul li:nth-child(6) a:hover h3 {
+    position: absolute;
+    color: #ffffff;
+    z-index: 5;
+    left: 140px;
+    opacity: 1;
+    transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(6) a:hover:after {
+    left: 0;
+}
+.products-info ul li:nth-child(7) a:hover img{
     width: 575px;
     height: 639px;
     filter: grayscale(0%);
     opacity: 1;
     position: absolute;
     z-index: 2;
-    right: 289px;
+    right: 0;
     transition: 0.15s ease-out 0.15s;
 }
-.products-info ul li:nth-child(7) div{
+.products-info ul li:nth-child(7){
     width: 287px;
     margin-left: 1px;
 }
-.products-info ul li:nth-child(8) div:hover img{
+.products-info ul li:nth-child(7) a:hover h3 {
+    position: absolute;
+    color: #ffffff;
+    z-index: 5;
+    left: -140px;
+    opacity: 1;
+    transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(7) a:hover:after {
+    display: none;
+}
+.products-info ul li:nth-child(8) a:hover img{
     width: 575px;
     height: 639px;
     filter: grayscale(0%);
@@ -1087,12 +1211,23 @@ nav div {
     transition: 0.15s ease-out 0.15s;
     right: 0;
 }
-.products-info ul li:nth-child(8) div{
+.products-info ul li:nth-child(8){
     width: 287px;
     margin-left: 1px;
     position: relative;
 }
-.products-info ul li:nth-child(9) div:hover img{
+.products-info ul li:nth-child(8) a:hover h3 {
+    position: absolute;
+    color: #ffffff;
+    z-index: 5;
+    left: -140px;
+    opacity: 1;
+    transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(8) a:hover:after {
+    right: 0;
+}
+.products-info ul li:nth-child(9) a:hover img{
     width: 575px;
     height: 639px;
     filter: grayscale(0%);
@@ -1103,12 +1238,20 @@ nav div {
     bottom: 0;
     left: 0;
 }
-.products-info ul li:nth-child(9) div{
+.products-info ul li:nth-child(9){
     width: 287px;
     margin-right: 1px;
     position: relative;
 }
-.products-info ul li:nth-child(10) div:hover img{
+.products-info ul li:nth-child(9) a:hover h3 {
+    position: absolute;
+    color: #ffffff;
+    z-index: 5;
+    left: 140px;
+    opacity: 1;
+    transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(10) a:hover img{
     width: 575px;
     height: 639px;
     filter: grayscale(0%);
@@ -1119,11 +1262,22 @@ nav div {
     left: 0;
     transition: 0.15s ease-out 0.15s;
 }
-.products-info ul li:nth-child(10) div{
+.products-info ul li:nth-child(10){
     width: 287px;
     position: relative;
 }
-.products-info ul li:nth-child(11) div:hover img{
+.products-info ul li:nth-child(10) a:hover h3 {
+    position: absolute;
+    color: #000000;
+    z-index: 5;
+    left: 140px;
+    opacity: 1;
+    transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(10) a:hover:after {
+    display: none;
+}
+.products-info ul li:nth-child(11) a:hover img{
     width: 575px;
     height: 639px;
     filter: grayscale(0%);
@@ -1134,12 +1288,23 @@ nav div {
     right: 0;
     transition: 0.15s ease-out 0.15s;
 }
-.products-info ul li:nth-child(11) div{
+.products-info ul li:nth-child(11){
     width: 287px;
     position: relative;
     margin-left: 1px;
 }
-.products-info ul li:nth-child(12) div:hover img{
+.products-info ul li:nth-child(11) a:hover h3 {
+    position: absolute;
+    color: #000000;
+    z-index: 5;
+    left: -140px;
+    opacity: 1;
+    transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(11) a:hover:after {
+    display: none;
+}
+.products-info ul li:nth-child(12) a:hover img{
     width: 575px;
     height: 639px;
     filter: grayscale(0%);
@@ -1150,12 +1315,23 @@ nav div {
     right: 0;
     transition: 0.15s ease-out 0.15s;
 }
-.products-info ul li:nth-child(12) div{
+.products-info ul li:nth-child(12){
     width: 287px;
     position: relative;
     margin-left: 1px;
 }
-.products-info ul li:nth-child(13) div:hover img{
+.products-info ul li:nth-child(12) a:hover h3 {
+    position: absolute;
+    color: #ffffff;
+    z-index: 5;
+    left: -140px;
+    opacity: 1;
+    transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(12) a:hover:after {
+    right: 0;
+}
+.products-info ul li:nth-child(13) a:hover img{
     width: 575px;
     height: 639px;
     filter: grayscale(0%);
@@ -1166,12 +1342,20 @@ nav div {
     bottom: 0;
     left: 0;
 }
-.products-info ul li:nth-child(13) div{
+.products-info ul li:nth-child(13){
     width: 287px;
     margin-right: 1px;
     position: relative;
 }
-.products-info ul li:nth-child(14) div:hover img{
+.products-info ul li:nth-child(13) a:hover h3 {
+    position: absolute;
+    color: #ffffff;
+    z-index: 5;
+    left: 140px;
+    opacity: 1;
+    transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(14) a:hover img{
     width: 575px;
     height: 639px;
     filter: grayscale(0%);
@@ -1182,11 +1366,19 @@ nav div {
     left: 0;
     transition: 0.15s ease-out 0.15s;
 }
-.products-info ul li:nth-child(14) div{
+.products-info ul li:nth-child(14){
     width: 287px;
     position: relative;
 }
-.products-info ul li:nth-child(15) div:hover img{
+.products-info ul li:nth-child(14) a:hover h3 {
+    position: absolute;
+    color: #ffffff;
+    z-index: 5;
+    left: 140px;
+    opacity: 1;
+    transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(15) a:hover img{
     width: 575px;
     height: 639px;
     filter: grayscale(0%);
@@ -1197,12 +1389,23 @@ nav div {
     right: 0;
     transition: 0.15s ease-out 0.15s;
 }
-.products-info ul li:nth-child(15) div{
+.products-info ul li:nth-child(15){
     width: 287px;
     position: relative;
     margin-left: 1px;
 }
-.products-info ul li:nth-child(16) div:hover img{
+.products-info ul li:nth-child(15) a:hover h3 {
+    position: absolute;
+    color: #ffffff;
+    z-index: 5;
+    left: -140px;
+    opacity: 1;
+    transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(15) a:hover:after {
+    right: 0;
+}
+.products-info ul li:nth-child(16) a:hover img{
     width: 575px;
     height: 639px;
     filter: grayscale(0%);
@@ -1213,10 +1416,21 @@ nav div {
     right: 0;
     transition: 0.15s ease-out 0.15s;
 }
-.products-info ul li:nth-child(16 ) div{
+.products-info ul li:nth-child(16){
     width: 287px;
     position: relative;
     margin-left: 1px;
+}
+.products-info ul li:nth-child(16) a:hover h3 {
+    position: absolute;
+    color: #ffffff;
+    z-index: 5;
+    left: -140px;
+    opacity: 1;
+    transition: 0.3s ease-out 0.15s;
+}
+.products-info ul li:nth-child(16) a:hover:after {
+    right: 0;
 }
 
 
@@ -1227,7 +1441,7 @@ nav div {
     flex-direction: row;
     width: 1152px;
     flex-wrap: wrap;
-    overflow: hidden;
+
 }
 .products-info{
     position: relative;
@@ -1266,6 +1480,11 @@ nav div {
 }
 
 
+#factory {
+    background-color: #E5E5E5;
+    margin-top: 88px;
+    padding-bottom: 80px;
+}
 
 
 
@@ -1275,7 +1494,7 @@ nav div {
     width: 1151px;
     margin-left: auto;
     margin-right: auto;
-    padding: 88px 144px 0px 145px;
+    padding: 88px 144px 0 145px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1459,7 +1678,7 @@ footer {
 }
 .sp-welcome-container {
     width: 807px;
-    padding: 161px 489px 102px 144px;
+    padding: 161px 489px 100px 144px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -1517,7 +1736,7 @@ footer {
     width: 1151px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0px 144px 113px 145px;
+    padding: 0px 144px 0px 145px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1816,7 +2035,7 @@ footer {
     width: 1152px;
     margin-left: auto;
     margin-right: auto;
-    padding: 105px 144px 0px 144px;
+    padding: 100px 144px 0 144px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1869,6 +2088,10 @@ footer {
     position: relative;
     cursor: url("icon/cursor-finger.svg"), pointer;
     overflow: hidden;
+}
+.techno-list a {
+    color: #000000;
+    cursor: url("icon/cursor-finger.svg"), pointer;
 }
 .techno-list li h4 {
     position: absolute;
