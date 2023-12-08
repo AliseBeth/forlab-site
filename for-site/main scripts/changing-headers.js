@@ -37,6 +37,7 @@ setInterval(function() {
         point.classList.remove('hidden');
         i++
     }
+    
     if (i === 3) {
         i = 1;
     }
