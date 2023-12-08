@@ -280,8 +280,11 @@ nav div {
     width: 100%;
     height: 100%;
 }
+
 .welcome-slide h2 {
     width: 720px;
+    margin-left: 5px;
+    margin-top: 8px;
 }
 .welcome-slide-info {
     position: absolute;
@@ -380,7 +383,7 @@ nav div {
     opacity: 0.5;
     z-index: 8; 
     transition: 0.3s;
-    margin-top: -150px;
+    margin-top: -140px;
 }
 .slides-slide-hidden-arrows h4:hover { 
     opacity: 1;
@@ -404,10 +407,11 @@ nav div {
 .slides-slide-hidden h2 {
     margin-bottom: 8px;
     transition: 0.4s;
+    margin-top: 32px;
 }
 .slides-slide-hidden p {
     margin-bottom: 4px;
-    margin-left: 2px;
+    margin-left: 4px;
 }
 
 .slides-slide-img img {
@@ -1484,6 +1488,9 @@ nav div {
     background-color: #E5E5E5;
     margin-top: 88px;
     padding-bottom: 80px;
+}
+#factory .slides-slide-hidden h2 {
+    margin-top: 40px;
 }
 
 
