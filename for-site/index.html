@@ -12,59 +12,59 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Comforter+Brush&display=swap" rel="stylesheet">
     <style>
-    .preloader {
-        position: fixed;
-        left: 0;
+        .preloader {
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: rgb(255, 255, 255);
+            z-index: 1001;
+        }
+        .preloader_row {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        width: 70px;
+        height: 70px;
+        animation: preloader-rotate 2s infinite linear;
+        }
+        .preloader_item {
+        position: absolute;
         top: 0;
-        right: 0;
+        background-color: #3DB9FF;
+        border-radius: 100%;
+        width: 35px;
+        height: 35px;
+        animation: preloader-bounce 2s infinite ease-in-out;
+        }
+        .preloader_item:last-child {
+        top: auto;
         bottom: 0;
-        background: rgb(255, 255, 255);
-        z-index: 1001;
-    }
-    .preloader_row {
-      position: relative;
-      top: 50%;
-      left: 50%;
-      width: 70px;
-      height: 70px;
-      animation: preloader-rotate 2s infinite linear;
-    }
-    .preloader_item {
-      position: absolute;
-      top: 0;
-      background-color: #3DB9FF;
-      border-radius: 100%;
-      width: 35px;
-      height: 35px;
-      animation: preloader-bounce 2s infinite ease-in-out;
-    }
-    .preloader_item:last-child {
-      top: auto;
-      bottom: 0;
-      animation-delay: -1s;
-    }
-    @keyframes preloader-rotate {
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-    @keyframes preloader-bounce {
-      0%,
-      100% {
-        transform: scale(0);
-      }
-      50% {
-        transform: scale(1);
-      }
-    }
-    .loaded_hiding .preloader {
-      transition: 0.3s opacity;
-      opacity: 0;
-    }
-    .loaded .preloader {
-      display: none;
-    }
-  </style>
+        animation-delay: -1s;
+        }
+        @keyframes preloader-rotate {
+        100% {
+            transform: rotate(360deg);
+        }
+        }
+        @keyframes preloader-bounce {
+        0%,
+        100% {
+            transform: scale(0);
+        }
+        50% {
+            transform: scale(1);
+        }
+        }
+        .loaded_hiding .preloader {
+        transition: 0.3s opacity;
+        opacity: 0;
+        }
+        .loaded .preloader {
+        display: none;
+        }
+    </style>
 
 
 </head>
@@ -421,6 +421,56 @@
         </section>
 
         <section class="moving-line">
+            <div class="moving-line-container">
+                <div class="moving-line-text">
+                    <h2>сделать заказ</h2>
+                    <h2>&#62</h2>
+                    <h2>сделать заказ</h2>
+                    <h2>&#62</h2>
+                    <h2>сделать заказ</h2>
+                    <h2>&#62</h2>
+                    <h2>сделать заказ</h2>
+                    <h2>&#62</h2>
+                    <h2>сделать заказ</h2>
+                    <h2>&#62</h2>
+                    <h2>пук в лужу</h2>
+                    <h2>&#62</h2>
+                    <h2>сделать заказ</h2>
+                    <h2>&#62</h2>
+                </div>  
+                <div class="moving-line-text">
+                    <h2>сделать заказ</h2>
+                    <h2>&#62</h2>
+                    <h2>сделать заказ</h2>
+                    <h2>&#62</h2>
+                    <h2>сделать заказ</h2>
+                    <h2>&#62</h2>
+                    <h2>сделать заказ</h2>
+                    <h2>&#62</h2>
+                    <h2>сделать заказ</h2>
+                    <h2>&#62</h2>
+                    <h2>пук в лужу</h2>
+                    <h2>&#62</h2>
+                    <h2>сделать заказ</h2>
+                    <h2>&#62</h2>
+                </div>   
+                <div class="moving-line-text">
+                    <h2>сделать заказ</h2>
+                    <h2>&#62</h2>
+                    <h2>сделать заказ</h2>
+                    <h2>&#62</h2>
+                    <h2>сделать заказ</h2>
+                    <h2>&#62</h2>
+                    <h2>сделать заказ</h2>
+                    <h2>&#62</h2>
+                    <h2>сделать заказ</h2>
+                    <h2>&#62</h2>
+                    <h2>пук в лужу</h2>
+                    <h2>&#62</h2>
+                    <h2>сделать заказ</h2>
+                    <h2>&#62</h2>
+                </div>  
+            </div>
             <div class="moving-line-container">
                 <div class="moving-line-text">
                     <h2>сделать заказ</h2>
