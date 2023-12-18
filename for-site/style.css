@@ -631,23 +631,25 @@ nav div {
     margin-left: auto;
     margin-right: auto;
     cursor: url("icon/cursor-finger.svg"), pointer;
-    background-color: #e5e5e5;
+    background-color: #3DB9FF;
     transition: 0.4s;
     width: 100%;
     transform:rotate(-3deg);
     filter: blur(1.5px);
+    opacity: 0.9;
 }
 .moving-line-container:nth-child(2) {
     display: inline-flex;
     white-space: nowrap;
     overflow: hidden; 
     cursor: url("icon/cursor-finger.svg"), pointer;
-    background-color: #e5e5e5;
+    background-color: #3DB9FF;
     transition: 0.4s;
     width: 100%;
     transform:rotate(3deg);
     margin-top: -300px;
     filter: blur(0);
+    opacity: 1;
 }
 .moving-line-text {
     display: flex;
