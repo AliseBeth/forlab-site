@@ -528,8 +528,8 @@ nav div {
 }
 .slides-slide ul li:nth-child(4) .slides-slide-letter{
     z-index: 1;
-    top: -134px;
-    left: -15px;
+    top: 220px;
+    left: 80px;
 }
 .slides-slide ul li:nth-child(4) .slides-slide-word{
     top: 134px;
