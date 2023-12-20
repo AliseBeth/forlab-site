@@ -327,7 +327,12 @@ nav div {
     left: 45vw;
     top: 52vh;
 }
-
+.welcome-slide:nth-child(1) {
+    color: #ffffff;
+}
+.welcome-slide:nth-child(3) {
+    color: #ffffff;
+}
 .welcome-slide-typing h1 {
     white-space: nowrap;  
     overflow: hidden;
