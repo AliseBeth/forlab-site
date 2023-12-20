@@ -96,12 +96,12 @@
 }
 .list-container li:hover {
     flex-grow: 8;
-    transition: 0.5s ease-out 0.5s;
+    transition: 0.5s ease-out 0.2s;
 }
 .list-container li:hover img {
     filter: grayscale(0%);
     opacity: 1;
-    transition: 0.5s ease-out 0.5s;
+    transition: 0.5s ease-out 0.2s;
 }
 
 

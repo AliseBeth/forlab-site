@@ -1720,10 +1720,12 @@ nav div {
 
 footer {
     background-color: #E5E5E5;
+    position: relative;
+    overflow: hidden;
 }
 .footer-container {
     width: 1152px;
-    padding: 96px 144px 163px 144px;
+    padding: 96px 144px 200px 144px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -1745,5 +1747,23 @@ footer {
 .footer-media {
     margin-top: 225px;
 }
-
-
+footer .moving-line {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+}
+footer .moving-line-container {
+    background-color: #000000;
+    transform:rotate(-4deg);
+    transition: 0.2s;
+    color: #ffffff;
+    filter: blur(1px);
+}
+footer .moving-line-container:hover {
+    filter: blur(0);
+}
+footer .moving-line-container:hover .moving-line-text{
+    transition: 0.2s;
+    opacity: 1;
+    background-color: #000000;
+}
