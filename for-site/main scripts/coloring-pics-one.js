@@ -10,7 +10,5 @@ setInterval(function() {
     let min = 0;
     let max = pics.length;
     let chosenPicOne = (Math.floor(Math.random() * (max - min) + min));
-    let chosenPicTwo = (Math.floor(Math.random() * (max - min) + min));
     containerPics[chosenPicOne].classList.add('colored');
-    containerPics[chosenPicTwo].classList.add('colored');
 }, 3000); 
