@@ -280,7 +280,7 @@
     height: 479px;
     object-fit: cover;
 }
-.techno-list img {
+.techno-color img {
     width: 143px;
     height: 159px;
     filter: grayscale(100%);
@@ -290,7 +290,7 @@
     z-index: 0;
     object-fit: cover;
 }
-.techno-list li:hover img{
+.techno-list li:hover .techno-color img{
     filter: grayscale(0%);
     opacity: 1;
     transition: 0.5s ease-out 0.3s;
@@ -306,14 +306,14 @@
 .techno-list ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     flex-grow: 1;
     margin-top: 80px;
 }
 .techno-list li {
     width: 559px;
     height: 159px;
-    margin-bottom: 82px;
-    margin-right: 17px;
+    margin-bottom: 61px;
     display: flex;
     position: relative;
     cursor: url("icon/cursor-finger.svg"), pointer;
@@ -357,4 +357,11 @@
 }
 .techno button:active {
     background-color: #24709c;
+}
+.techno-icon img {
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    top: 30px;
+    left: 20px;
 }
