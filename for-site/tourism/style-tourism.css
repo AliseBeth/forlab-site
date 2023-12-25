@@ -301,12 +301,12 @@
     margin-bottom: 61px;
     display: flex;
     position: relative;
-    cursor: url("icon/cursor-finger.svg"), pointer;
+    cursor: url("../icon/cursor-finger.svg"), pointer;
     overflow: hidden;
 }
 .techno-list a {
     color: #000000;
-    cursor: url("icon/cursor-finger.svg"), pointer;
+    cursor: url("../icon/cursor-finger.svg"), pointer;
 }
 .techno-list li h4 {
     position: absolute;
@@ -331,7 +331,7 @@
     background-color: #3DB9FF;
     border: none;
     padding: 16px 77px;
-    cursor: url("icon/cursor-finger.svg"), pointer;
+    cursor: url("../icon/cursor-finger.svg"), pointer;
     margin-top: 29px;
     margin-bottom: 113px;
     transition: 0.4s;
