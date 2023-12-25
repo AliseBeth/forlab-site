@@ -14,8 +14,6 @@ setInterval(function() {
     for (let b = 0; b < headers.length; b++) {
         headers[b].classList.add('hidden');
     };
-
-    console.log('hi')
     
     headers[actual_header].classList.remove('hidden');
     actual_header = actual_header + 1;
