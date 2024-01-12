@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sochi2014</title>
+    <link rel="icon" href="../../../icon/111.png">
+    <link rel="stylesheet" href="cases.css">
+    <link rel="stylesheet" href="../../../style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Comforter+Brush&display=swap" rel="stylesheet">
+    <style>
+        .preloader {
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: rgb(255, 255, 255);
+            z-index: 1001;
+        }
+        .preloader_row {
+          position: relative;
+          top: 50%;
+          left: 50%;
+          width: 70px;
+          height: 70px;
+          animation: preloader-rotate 2s infinite linear;
+        }
+        .preloader_item {
+          position: absolute;
+          top: 0;
+          background-color: #3DB9FF;
+          border-radius: 100%;
+          width: 35px;
+          height: 35px;
+          animation: preloader-bounce 2s infinite ease-in-out;
+        }
+        .preloader_item:last-child {
+          top: auto;
+          bottom: 0;
+          animation-delay: -1s;
+        }
+        @keyframes preloader-rotate {
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+        @keyframes preloader-bounce {
+          0%,
+          100% {
+            transform: scale(0);
+          }
+          50% {
+            transform: scale(1);
+          }
+        }
+        .loaded_hiding .preloader {
+          transition: 0.3s opacity;
+          opacity: 0;
+        }
+        .loaded .preloader {
+          display: none;
+        }
+      </style>
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader_row">
+          <div class="preloader_item"></div>
+          <div class="preloader_item"></div>
+        </div>
+    </div>
+    <header>
+        <nav class="header-container">
+            <div class="header-burger">
+                <button>
+                    <img class="head-bur" src="../../../icon/burger.svg" alt="def">
+                </button>
+                <button>
+                    <img class="head-cross hidden" src="../../../icon/cross.svg" alt="def">
+                </button>
+            </div>
+            <div class="header-info hidden">
+                <div class="header-menu">
+                    <button onclick="window.location.href='../../../index.html'">
+                        <h1>главная</h1>
+                    </button>
+                    <button onclick="window.location.href='../../../index.html#slides'">
+                        <h1>мерч</h1>
+                    </button>
+                    <button onclick="window.location.href='../../../index.html#pictures'">
+                        <h1>кейсы</h1>
+                    </button>
+                    <button onclick="window.location.href='../../../index.html#products'">
+                        <h1>товар</h1>
+                    </button>   
+                </div>
+                <div class="header-contacts">
+                    <div class="header-contacts-logo">
+                        <a href="https://gifts.ru" target="_blank"> 
+                            <img src="../../../icon/proect.svg" alt="def">
+                        </a>
+                    </div>
+                    <ul class="header-contacts-address">
+                        <li class="footer-address-city">
+                            <h3>москва:</h3>
+                            <ul>
+                                <li>ул. Бутырская, 76, стр. 1</li>
+                                <li>Телефон: +7 (499) 704-33-62</li>
+                            </ul>
+                        </li>
+                        <li class="footer-address-city">
+                            <h3>санкт-петербург:</h3>
+                            <ul>
+                                <li>Московский пр., 10-12</li>
+                                <li>Телефон: +7 (812) 389-44-14</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-social">
+                <div class="header-media">
+                    <div>
+                        <a href="https://t.me/proekt_111" target="_blank"> 
+                            <img src="../../../icon/telegram.svg" alt="def">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://vk.com/proekt111" target="_blank"> 
+                            <img src="../../../icon/vk.svg" alt="def">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.youtube.com/channel/UCSz09W4RpKMhQ9WFICSqy1Q" target="_blank"> 
+                            <img src="../../../icon/youtube.svg" alt="def">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="case-welcome" class="case-welcome">
+            <div class="case-welcome-container">
+                <div class="case-welcome-back">
+                        <button onclick="window.location.href='../sport.html#list'">&#60&#60 назад</button>
+                </div>
+            </div>
+            <div class="case-welcome-img">
+                <img src="../img/sochi/05.jpg" alt="def">
+            </div>
+        </section>
+
+        <section id="case-pictures" class="case-pictures">
+            <div class="case-pictures-container">
+                <div class="case-pictures-info">
+                    <p>И нет сомнений, что многие известные 
+                        личности представляют собой не что иное, как 
+                        квинтэссенцию победы маркетинга над разумом и должны быть 
+                        в равной степени предоставлены сами себе. Прежде всего, 
+                        современная методология разработки требует анализа как 
+                        самодостаточных, так и внешне зависимых концептуальных решений. 
+                        В целом, конечно, новая модель организационной деятельности 
+                        требует определения и уточнения дальнейших направлений развития. 
+                        В целом, конечно, новая модель организационной деятельности 
+                        требует определения и 
+                        уточнения дальнейших направлений развития. </p>
+                </div>
+                <div class="case-pictures-img">   
+                    <ul>
+                        <li>
+                            <div class="coloring">
+                                <img src="../img/sochi/02.jpg" alt="def">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="coloring">
+                                <img src="../img/sochi/01.jpg" alt="def">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="coloring">
+                                <img src="../img/sochi/09.jpg" alt="def">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="coloring">
+                                <img src="../img/sochi/03.jpg" alt="def">
+                            </div class="coloring">
+                        </li>
+                        <li>
+                            <div class="coloring">
+                                <img src="../img/sochi/04.jpg" alt="def">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="coloring">
+                                <img src="../img/sochi/10.jpg" alt="def">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="coloring">
+                                <img src="../img/sochi/05.jpg" alt="def">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="coloring">
+                                <img src="../img/sochi/06.jpg" alt="def">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="coloring">
+                                <img src="../img/sochi/07.jpg" alt="def">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="coloring">
+                                <img src="../img/sochi/08.jpg" alt="def">
+                            </div>
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+
+    <footer id="footer" class="footer">
+        <div class="footer-container">
+            <div class="footer-address">
+                <h2>контакты</h2>
+                <ul>
+                    <li class="footer-address-city">
+                        <h3>москва</h3>
+                        <ul>
+                            <li>ул. Бутырская, 76, стр. 1</li>
+                            <li>Телефон: +7 (499) 704-33-62</li>
+                        </ul>
+                    </li>
+                    <li class="footer-address-city">
+                        <h3>санкт-петербург</h3>
+                        <ul>
+                            <li>Московский пр., 10-12</li>
+                            <li>Телефон: +7 (812) 389-44-14</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-media" style="display: none;">
+                <div>
+                    <img src="../../icon/youtube.svg" alt="def">
+                </div>
+                <div>
+                    <img src="../../icon/vk.svg" alt="def">
+                </div>
+                <div>
+                    <img src="../../icon/telegram.svg" alt="def">
+                </div>
+            </div>
+        </div>
+        <div class="moving-line">
+            <div class="moving-line-container">
+                <div class="moving-line-text">
+                    <h2>заказать звонок</h2>
+                    <h2>&#62</h2>
+                    <h2>заказать звонок</h2>
+                    <h2>&#62</h2>
+                    <h2>заказать звонок</h2>
+                    <h2>&#62</h2>
+                    <h2>заказать звонок</h2>
+                    <h2>&#62</h2>
+                    <h2>заказать звонок</h2>
+                    <h2>&#62</h2>
+                    <h2>заказать звонок</h2>
+                    <h2>&#62</h2>
+                    <h2>заказать звонок</h2>
+                    <h2>&#62</h2>
+                </div>
+                <div class="moving-line-text">
+                    <h2>заказать звонок</h2>
+                    <h2>&#62</h2>
+                    <h2>заказать звонок</h2>
+                    <h2>&#62</h2>
+                    <h2>заказать звонок</h2>
+                    <h2>&#62</h2>
+                    <h2>заказать звонок</h2>
+                    <h2>&#62</h2>
+                    <h2>заказать звонок</h2>
+                    <h2>&#62</h2>
+                    <h2>заказать звонок</h2>
+                    <h2>&#62</h2>
+                    <h2>заказать звонок</h2>
+                    <h2>&#62</h2>
+                </div>  
+                <div class="moving-line-text">
+                    <h2>заказать звонок</h2>
+                    <h2>&#62</h2>
+                    <h2>заказать звонок</h2>
+                    <h2>&#62</h2>
+                    <h2>заказать звонок</h2>
+                    <h2>&#62</h2>
+                    <h2>заказать звонок</h2>
+                    <h2>&#62</h2>
+                    <h2>заказать звонок</h2>
+                    <h2>&#62</h2>
+                    <h2>заказать звонок</h2>
+                    <h2>&#62</h2>
+                    <h2>заказать звонок</h2>
+                    <h2>&#62</h2>
+                </div> 
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+</script>
+<script src="../../../main scripts/menu.js"></script>
+
+
+</html>
