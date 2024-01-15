@@ -48,7 +48,7 @@
     width: 1152px;
     margin-left: auto;
     margin-right: auto;
-    padding: 66px 144px 0px 143px;
+    padding: 66px 144px 65px 143px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,20 +64,92 @@
     margin: 0.5px;
     width: 287px;
     height: 319px;
+    position: relative;
 }
 .case-pictures-img img {
     width: 287px;
     height: 100%;
     object-fit: cover;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    cursor: url("../../../icon/cursor-finger.svg"), pointer;
+    transition: 0.4s;
+}
+.case-pictures-img img:hover {
     filter: grayscale(0%);
     opacity: 1;
-    cursor: url("../../../icon/cursor-plus.svg"), pointer;
+    transition: 0.4s;
 }
-
 .case-pictures-info{
     width: 1151px;
     margin-bottom: 63px;
 }
 .case-pictures-info p {
     width: 431px;
+}
+
+
+.case-pictures-img li:nth-child(4n+1) img{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.case-pictures-img li:nth-child(4n+1):hover img{
+    width: 575px;
+    height: 639px;
+    filter: grayscale(0%);
+    opacity: 1;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    transition: 0.4s ease-out 0.2s;
+}
+.case-pictures-img li:nth-child(4n+2) img{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.case-pictures-img li:nth-child(4n+2):hover img{
+    width: 575px;
+    height: 639px;
+    filter: grayscale(0%);
+    opacity: 1;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    transition: 0.4s ease-out 0.2s;
+}
+.case-pictures-img li:nth-child(4n+3) img{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.case-pictures-img li:nth-child(4n+3):hover img{
+    width: 575px;
+    height: 639px;
+    filter: grayscale(0%);
+    opacity: 1;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    transition: 0.4s ease-out 0.2s;
+}
+.case-pictures-img li:nth-child(4n+4) img{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.case-pictures-img li:nth-child(4n+4):hover img{
+    width: 575px;
+    height: 639px;
+    filter: grayscale(0%);
+    opacity: 1;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    transition: 0.4s ease-out 0.2s;
 }
