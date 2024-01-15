@@ -1,0 +1,106 @@
+.case-welcome {
+
+}
+.case-welcome-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 1151px;
+    height: 100%;
+}
+.case-welcome-img {
+    position: relative;
+}
+.case-welcome-img img {
+    width: 100%;
+    height: 640px;
+    object-fit: cover;
+    z-index: 1;
+}
+.case-welcome-back{
+    position: absolute;
+    top: 32px;
+    z-index: 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.case-welcome-back button {
+    padding: 8px 16px;
+    cursor: url("../../icon/cursor-finger.svg"), pointer;
+    font-family:  'Open Sans', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: transparent;
+    border: none;
+    transition: 0.4s;
+}
+.case-welcome-back:hover button{
+    background-color: #000000;
+    transition: 0.4s;
+    color: #ffffff;
+    transition: 0.4s;
+}
+
+
+
+.case-pictures-container {
+    width: 1152px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 66px 144px 65px 143px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.case-pictures-img ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 1152px;
+    height: 2233px;
+}
+.case-pictures-img ul li {
+    flex-grow: 1;
+    width: 575px;
+    height: 316px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    transition: 0.4s ease-out 0.2s;
+}
+.case-pictures-img ul li:hover {
+    flex-grow: 70;
+    transition: 0.4s;
+}
+.case-pictures-img ul li div{
+    margin: 0.5px;
+    width: 575px;
+    height: 319px;
+    position: relative;
+}
+.case-pictures-img img {
+    width: 575px;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    cursor: url("../../../icon/cursor-finger.svg"), pointer;
+    transition: 0.4s;
+}
+.case-pictures-img img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transition: 0.4s;
+    height: 641px;
+    position: relative;
+    z-index: 50;
+}
+.case-pictures-info{
+    width: 1151px;
+    margin-bottom: 63px;
+}
+.case-pictures-info p {
+    width: 431px;
+}
+

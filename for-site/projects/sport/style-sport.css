@@ -94,6 +94,9 @@
     flex-grow: 1;
     transition: 0.5s;
 }
+.list-container li a {
+    cursor: url("../../icon/cursor-finger.svg"), pointer;
+}
 .list-container li:hover {
     flex-grow: 8;
     transition: 0.5s ease-out 0.2s;
