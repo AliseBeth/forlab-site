@@ -59,18 +59,18 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: 1152px;
-    height: 2900px;
+    height: 2233px;
 }
 .case-pictures-img ul li {
     flex-grow: 1;
     width: 575px;
-    height: 13%;
+    height: 316px;
     margin-top: 1px;
     margin-bottom: 1px;
     transition: 0.4s ease-out 0.2s;
 }
 .case-pictures-img ul li:hover {
-    flex-grow: 50;
+    flex-grow: 70;
     transition: 0.4s;
 }
 .case-pictures-img ul li div{
@@ -92,6 +92,9 @@
     filter: grayscale(0%);
     opacity: 1;
     transition: 0.4s;
+    height: 641px;
+    position: relative;
+    z-index: 50;
 }
 .case-pictures-info{
     width: 1151px;
