@@ -85,7 +85,7 @@
     object-fit: cover;
     filter: grayscale(100%);
     opacity: 0.8;
-    cursor: url("../../../icon/cursor-finger.svg"), pointer;
+    cursor: url("../../../icon/cursor-plus.svg"), pointer;
     transition: 0.4s;
 }
 .case-pictures-img img:hover {
