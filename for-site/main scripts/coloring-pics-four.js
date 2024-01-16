@@ -16,5 +16,5 @@ setInterval(function() {
     containerPics[chosenPicTwo].classList.add('colored');
     containerPics[chosenPicThree].classList.add('colored');
     containerPics[chosenPicFour].classList.add('colored');
-
+    
 }, 3000); 
