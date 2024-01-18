@@ -92,10 +92,12 @@
     height: 319px;
     margin-left: 1px;
     margin-bottom: 1px; 
-    cursor: url("../../icon/cursor-finger.svg"), pointer;
     overflow: hidden;
     flex-grow: 1;
     transition: 0.5s;
+}
+.list-container li a {
+    cursor: url("../../icon/cursor-finger.svg"), pointer;
 }
 .list-container li:hover {
     flex-grow: 8;

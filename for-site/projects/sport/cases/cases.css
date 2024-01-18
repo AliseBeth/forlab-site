@@ -39,7 +39,7 @@
 }
 .case-welcome-back button {
     padding: 8px 16px;
-    cursor: url("../../icon/cursor-finger.svg"), pointer;
+    cursor: url("../../../icon/cursor-finger.svg"), pointer;
     font-family:  'Open Sans', 'Arial', sans-serif;
     font-size: 14px;
     line-height: 16px;
@@ -53,10 +53,14 @@
     color: #ffffff;
     transition: 0.4s;
 }
-.case-welcome-back .white-button {
-    background-color: #ffffff;
+.case-welcome-back .black-button {
+    background-color: #000000;
+    color: aliceblue;
 }
-
+.case-welcome-back.white-hover-button:hover button{
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
 
 .case-pictures-container {
     width: 1152px;
