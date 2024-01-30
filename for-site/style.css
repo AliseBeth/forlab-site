@@ -660,11 +660,11 @@ nav div {
 }
 .moving-line-text {
     display: flex;
-    animation: startLine 60s linear  infinite;
+    animation: startLine 120s linear  infinite;
 }
 .moving-line-container:nth-child(2) .moving-line-text {
     display: flex;
-    animation: startLine 120s linear  infinite;
+    animation: startLine 240s linear  infinite;
 }
 .moving-line-text h2 {
     text-align: center;
