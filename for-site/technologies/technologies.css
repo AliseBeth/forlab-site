@@ -1,0 +1,235 @@
+.case-welcome {
+    position: relative;
+}
+.case-welcome-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 1151px;
+}
+.case-welcome-img {
+    position: relative;
+    height: 640px;
+}
+.case-welcome-img img {
+    width: 100%;
+    height: 640px;
+    object-fit: cover;
+    z-index: 1;
+}
+.case-welcome-back{
+    position: absolute;
+    top: 32px;
+    z-index: 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.case-welcome-source {
+    position: absolute;
+    right: 0px;
+    color: #ffffff;
+    bottom: 0;
+    width: 20px;
+}
+.case-welcome-source p {
+    white-space: nowrap;
+    transform: rotate(270deg);
+    margin-bottom: 5px;
+}
+.case-welcome-back button {
+    padding: 8px 16px;
+    cursor: url("../icon/cursor-finger.svg"), pointer;
+    font-family:  'Open Sans', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: transparent;
+    border: none;
+    transition: 0.4s;
+}
+.case-welcome-back:hover button{
+    background-color: #000000;
+    transition: 0.4s;
+    color: #ffffff;
+    transition: 0.4s;
+}
+.case-welcome-back .black-button {
+    background-color: #000000;
+    color: aliceblue;
+}
+.case-welcome-back.white-hover-button:hover button{
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+.case-pictures-container {
+    width: 1152px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 66px 144px 65px 143px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.case-pictures-img ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1152px;
+}
+.case-pictures-img ul li div{
+    margin: 0.5px;
+    width: 287px;
+    height: 319px;
+    position: relative;
+}
+.case-pictures-img img {
+    width: 287px;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    cursor: url("../icon/cursor-plus.svg"), pointer;
+    transition: 0.4s;
+}
+.case-pictures-img img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transition: 0.4s;
+}
+.case-pictures-info{
+    width: 1151px;
+    margin-bottom: 63px;
+}
+.case-pictures-info p {
+    width: 431px;
+}
+
+.case-pictures-img h3 {
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+}
+.case-pictures-img li:hover h3 {
+    opacity: 1;
+    z-index: 3;
+    cursor: url("../icon/cursor-plus.svg"), pointer;
+}
+.case-pictures-img li:nth-child(4n+1) img{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.case-pictures-img li:nth-child(4n+1):hover img{
+    width: 575px;
+    height: 639px;
+    filter: grayscale(0%);
+    opacity: 1;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    transition: 0.4s ease-out 0.2s;
+}
+.case-pictures-img li:nth-child(4n+2) img{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.case-pictures-img li:nth-child(4n+2):hover img{
+    width: 575px;
+    height: 639px;
+    filter: grayscale(0%);
+    opacity: 1;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    transition: 0.4s ease-out 0.2s;
+}
+.case-pictures-img li:nth-child(4n+3) img{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.case-pictures-img li:nth-child(4n+3):hover img{
+    width: 575px;
+    height: 639px;
+    filter: grayscale(0%);
+    opacity: 1;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    transition: 0.4s ease-out 0.2s;
+}
+.case-pictures-img li:nth-child(4n+4) img{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.case-pictures-img li:nth-child(4n+4):hover img{
+    width: 575px;
+    height: 639px;
+    filter: grayscale(0%);
+    opacity: 1;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    transition: 0.4s ease-out 0.2s;
+}
+
+.case-pictures-img ul li .case-pictures-two-text {
+    position: relative;
+    width: 511px;
+    padding: 32px;
+    z-index: 1;
+    height: 255px;
+}
+.case-pictures-two-text h3 {
+    margin-bottom: 32px;
+}
+.case-pictures-two-text h4 {
+    position: absolute;
+    color: #3DB9FF;
+    font-size: 700px;
+    line-height: 512px;
+    bottom: -100px;
+    left: 0px;
+    z-index: -1;
+    font-family: 'Comforter', 'Arial', cursive;
+    opacity: 0.4;
+    font-weight: 300;
+}
+.case-pictures-img ul li .case-pictures-two-text div {
+    position: absolute;
+    height: 319px;
+    overflow: hidden;
+    top: 0;
+}
+
+.case-button {
+    position: relative;
+    height: 319px;
+    overflow: hidden;
+    width: 574px;
+}
+.case-button h4 {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    animation: movingArrows 3s linear  infinite;
+}
+@keyframes movingArrows {
+    0% {
+        transform: translate(10%, 0);
+    }
+    50% {
+        transform: translate(0%, 0)
+    }
+    100% {
+        transform: translate(10%, 0);
+    }
+}
