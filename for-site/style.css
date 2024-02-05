@@ -453,20 +453,18 @@ nav div {
     transition: 0.3s;
     margin-top: -140px;
 }
+@keyframes movingArrows {
+    0% {
+        transform: translate(10%, 0);
+    }
+    50% {
+        transform: translate(0%, 0)
+    }
+    100% {
+        transform: translate(10%, 0);
+    }
+}
 
-
-/*.slides-slide-hidden:before { 
-    content: '';
-    width: 144px;
-    height: 159px;
-    background-color: #ffffff;
-    opacity: 0.2;
-    position: absolute;
-    top:-16px;
-    left: -16px;
-    z-index: -1;
-    transition: 0.4s;
-}*/
 .slides-slide-hidden h2 {
     margin-bottom: 8px;
     transition: 0.4s;
