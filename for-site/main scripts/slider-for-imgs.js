@@ -1,7 +1,7 @@
-const sp_pics_left = document.querySelectorAll('.sp-pictures-btn-left');
-const sp_pic_container = document.querySelectorAll('.sp-pic-one')
-const sp_pic = document.querySelectorAll('.sp-pic');
-const sp_pics_right = document.querySelectorAll('.sp-pictures-btn-right');
+const sp_pics_left = document.querySelectorAll('.slider-btn-left');
+const sp_pic_container = document.querySelectorAll('.slider-one')
+const sp_pic = document.querySelectorAll('.slider-img');
+const sp_pics_right = document.querySelectorAll('.slider-btn-right');
 
 
 for (let i = 0; i < sp_pic_container.length; i++) {
