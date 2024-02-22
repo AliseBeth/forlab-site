@@ -790,8 +790,8 @@ nav div {
     height: 319px;
 }
 .colored img{
-    filter: grayscale(0%);
-    opacity: 1;
+    filter: grayscale(0%) !important;
+    opacity: 1 !important;
 }
 
 
@@ -812,11 +812,11 @@ nav div {
     width: 287px;
     height: 319px;
     object-fit: cover;
-    filter: grayscale(100%);
     opacity: 0.8;
     cursor: url("icon/cursor-finger.svg"), pointer;
     object-fit: cover;
     transition: 0.2s;
+    filter: grayscale(100%);
 }
 .products-info ul li {
     margin-bottom: 1px;
