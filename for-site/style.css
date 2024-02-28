@@ -1093,6 +1093,17 @@ nav div {
     margin-top: 80px;
     transition: 0.4s;
 }
+
+#products li.products-header {
+    margin-bottom: 1px;
+    position: relative;
+    width: 287px;
+}
+#products li.products-header h2 {
+    width: 287px;
+}
+
+
 @media (hover: hover){
     .products-button button:hover {
         background-color: #8bd4ff;
@@ -1137,6 +1148,14 @@ nav div {
     #products .products-info li:nth-last-child(-n+5){
         display: none;
     }
+    #products li.products-header {
+        position: relative;
+        width: 100%;
+        margin: 80px 0 40px;
+    }
+    #products li.products-header h2 {
+        width: 75vw;
+    }
 }
 
 
@@ -1144,7 +1163,8 @@ nav div {
 
 #factory {
     background-color: #E5E5E5;
-    margin-top: 88px;
+    margin-top: 80px;
+    padding-top: 10px;
     padding-bottom: 80px;
 }
 #factory .slides-slide-hidden h2 {
