@@ -75,7 +75,6 @@
           <div class="preloader_item"></div>
         </div>
     </div>
-    <div w3-include-html="menu.html"></div> 
     <header>
         <nav class="header-container">
             <div class="header-burger">
@@ -176,8 +175,7 @@
                             <h1>фабрика стм</h1>
                         </div>
                         <div>
-                            <h2>от идеи до тиража: 
-                                производство, кастом, упаковка</h2>
+                            <h2>производство, кастом, упаковка</h2>
                         </div>
                     </div>
                     <div class="welcome-slide-img">
@@ -260,7 +258,7 @@
                         <li>
                             <a href="projects/fashion/fashion.html">
                                 <div class="slides-slide-word hidden">
-                                    <h3>мода</h3>
+                                    <h3>fashion</h3>
                                 </div>
                                 <div class="slides-slide-hidden">
                                     <h2>fashion</h2>
@@ -313,6 +311,7 @@
                 <div class="info-info">
                     <div class="info-head">
                         <h2>о компании</h2>
+                        <h4 class="hidden">>></h4>
                     </div>
                     <div class="info-text">
                         <p>И нет сомнений, что многие известные личности представляют 
@@ -333,9 +332,9 @@
             <div class="products-container">
                 <div class="products-info">   
                     <ul>
-                        <li style="width: 576px; pointer-events: none;">
+                        <li class="products-header">
                             <div class="products-info-head" >
-                                <h2 style="width: 576px">кейсы и всё таки я думаю здесь нужен длинный заголовок</h2>
+                                <h2>кейсы и всё таки я думаю здесь нужен длинный заголовок</h2>
                                 <h4>к</h4>
                             </div>
                         </li>
@@ -367,7 +366,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li style="pointer-events:none; width: 255px; padding: 16px;">
+                        <li class="products-text">
                             <h3 style="margin-bottom: 16px;">список приколов всяких:</h3>
                             <p>в своём стремлении повысить качество жизни,</p>
                             <p>они забывают, что базовый вектор развития</p>
@@ -550,6 +549,7 @@
                 <div class="info-info">
                     <div class="info-head">
                         <h2>возможности</h2>
+                        <h4 class="hidden">>></h4>
                     </div>
                     <div class="info-text">
                         <p><span>&#62</span> 30 000 SKU в 15 товарных группах</p>
@@ -569,7 +569,7 @@
             <div class="products-container">
                 <div class="products-info">   
                     <ul>
-                        <li>
+                        <li class="products-header">
                             <div class="products-info-head">
                                 <h2>каталог товаров</h2>
                                 <h4>т</h4>
@@ -808,26 +808,32 @@
                         <div>
                             <img src="img/person/person-1.jpg" alt="def">
                         </div>
-                        <h3>интерактивность</h3>
-                        <p>Удобная online-система работы с клиентами – трансляция 
-                            актуальных остатков на складах и в пути, система резервирования, 
-                            отслеживание всех этапов прохождения заказа от запуска до отгрузки.</p>
+                        <div>
+                            <h3>интерактивность</h3>
+                            <p>Удобная online-система работы с клиентами – трансляция 
+                                актуальных остатков на складах и в пути, система резервирования, 
+                                отслеживание всех этапов прохождения заказа от запуска до отгрузки.</p>
+                        </div>
                     </li>
                     <li>
                         <div>
                             <img src="img/person/person-2.jpg" alt="def">
                         </div>
-                        <h3>качество</h3>
-                        <p>Постоянная работа по совершенствованию качества работы и 
-                            расширению мощностей.</p>
+                        <div>
+                            <h3>качество</h3>
+                            <p>Постоянная работа по совершенствованию качества работы и 
+                                расширению мощностей.</p>
+                        </div>
                     </li>
                     <li>
                         <div>
                             <img src="img/person/person-3.jpg" alt="def">
                         </div>
-                        <h3>быстрая доставка</h3>
-                        <p>Выстроенные бизнес-процессы сборки, отгрузки и доставки 
-                            продукции по всей России.</p>
+                        <div>
+                            <h3>быстрая доставка</h3>
+                            <p>Выстроенные бизнес-процессы сборки, отгрузки и доставки 
+                                продукции по всей России.</p>
+                        </div>
                     </li>
                 </ul>
                 <a href="https://gifts.ru/become_dealer" target="_blank">
@@ -1248,7 +1254,7 @@
       window.setTimeout(function () {
         document.body.classList.add('loaded');
         document.body.classList.remove('loaded_hiding');
-      }, 500);
+      }, 1);
     }
 </script>
 <script src="main scripts/menu.js"></script>

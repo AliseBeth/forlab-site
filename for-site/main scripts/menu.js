@@ -18,12 +18,11 @@ function openMenu(event) {
         menu_points[i].addEventListener("click", closeMenu);
     
         function closeMenu(event) {
-            console.log('hi');
             menu.classList.remove('header-opened');
             document.body.classList.remove('overflow');
             document.querySelector('.header-contacts').classList.remove('opened');
-            document.querySelector('.head-bur').classList.add('hidden');
-            document.querySelector('.head-cross').classList.remove('hidden');
+            document.querySelector('.head-bur').classList.remove('hidden');
+            document.querySelector('.head-cross').classList.add('hidden');
             document.querySelector('.header-info').classList.add('hidden');
             document.querySelector('.header-social').classList.remove('opened');
             document.querySelector('.header-media').classList.remove('opened');
