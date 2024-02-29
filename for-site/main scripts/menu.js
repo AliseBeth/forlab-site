@@ -18,7 +18,6 @@ function openMenu(event) {
         menu_points[i].addEventListener("click", closeMenu);
     
         function closeMenu(event) {
-            console.log('hi');
             menu.classList.remove('header-opened');
             document.body.classList.remove('overflow');
             document.querySelector('.header-contacts').classList.remove('opened');
