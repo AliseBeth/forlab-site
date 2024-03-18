@@ -60,7 +60,6 @@ h1{
     font-weight: 700;
 }
 h2 {
-    font-family:  'Open Sans', 'Arial', sans-serif;
     font-size: 56px;
     line-height: 64px;
 }
@@ -500,7 +499,7 @@ nav div {
 .slides-slide-hidden-arrows {
     position: absolute;
     bottom: -150px;
-    right: -200px;
+    right: -250px;
     animation: movingArrows 3s linear  infinite;
     height: 250px;
     overflow: hidden;
@@ -525,9 +524,9 @@ nav div {
 }
 
 .slides-slide-hidden h2 {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
     transition: 0.4s;
-    margin-top: 32px;
+    margin-top: -32px;
 }
 .slides-slide-hidden p {
     margin-bottom: 4px;
@@ -849,6 +848,7 @@ nav div {
 }
 .info-container {
     width: 1153px;
+    height: 482px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -857,12 +857,12 @@ nav div {
     position: relative;
 }
 .info-img {
-    height: 479px;
+    height: 100%;
 }
 .info-img img {
     object-fit: cover;
     width: 576px;
-    height: 479px;
+    height: 100%;
 }
 .info-head h2 {
     margin-bottom: 81px;
@@ -1143,12 +1143,9 @@ nav div {
 .products-info-head h4{
     position: absolute;
     top: -111px;
-    left: -80px;
+    left: -187px;
     color: #3DB9FF;
     z-index: 0;
-    font-size: 700px;
-    font-family: 'Comforter', 'Arial', cursive;
-    font-weight: 900;
     opacity: 0.4;
 }
 

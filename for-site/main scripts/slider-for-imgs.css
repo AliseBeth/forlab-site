@@ -1,0 +1,41 @@
+
+.slider-btn button {
+    position: absolute;
+    z-index: 8;
+    width: 47px;
+    height: 100%;
+    font-size: 28px;
+    border: transparent;
+    color: #ffffff;
+    opacity: 0;
+    transition: 0.3s;
+    background-color: inherit;
+}
+.slider-block:hover button {
+    background-color: inherit;
+    transition: 0.3s;
+    opacity: 1;
+}
+.slider-block button:hover {
+    background-color: rgba(226, 226, 226, 0.2);
+    transition: 0.3s;
+    opacity: 1;
+    cursor: url("../icon/cursor-finger.svg"), pointer;
+}
+.slider-btn-right {
+    right: 0;
+}
+.slider-btn {
+    position: absolute;
+    transition: 0.4s ease-out 0.3s;
+    top: 0;
+}
+.slider-block-img {
+    position: relative;
+    height: 100%;
+}
+.slider-block-img div {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}

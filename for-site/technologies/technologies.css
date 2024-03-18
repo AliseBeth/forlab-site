@@ -193,19 +193,7 @@
     z-index: 3;
     transition: 0.3s ease-out 0.3s;
 }
-.slider-block-img {
-    position: relative;
-}
-.slider-block-img div {
-    width: 575px;
-    height: 638px;
-    z-index: 0;
-}
-.slider-btn {
-    position: absolute;
-    transition: 0.4s ease-out 0.3s;
-    top: 0;
-}
+
 .white-text {
     color: #ffffff;
     text-shadow: 1px 0 20px rgb(51, 51, 51);
@@ -213,30 +201,3 @@
 
 
 
-.slider-block:hover button {
-    background-color: rgba(221, 220, 220, 0.822);
-    transition: 0.3s;
-    opacity: 0.5;
-}
-
-.slider-btn button {
-    position: absolute;
-    z-index: 8;
-    width: 47px;
-    height: 100%;
-    font-size: 28px;
-    border: transparent;
-    background-color: rgba(221, 220, 220, 0.239);
-    color: #ffffff;
-    opacity: 0;
-    transition: 0.3s
-}
-.slider-block button:hover {
-    background-color: rgba(221, 220, 220, 0.822);
-    transition: 0.3s;
-    opacity: 1;
-    cursor: url("../icon/cursor-finger.svg"), pointer;
-}
-.slider-btn-right {
-    right: 0;
-}
