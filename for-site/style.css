@@ -827,14 +827,18 @@ nav div {
         margin-top: 0px;
         margin-bottom: 0px;
         height:100px;
+    
     }
     .moving-line-container {
-        width: 120%;
+        width: 100%;
         position: absolute;
         left: -5px;
+        overflow: hidden;
     }
     .moving-line-container:nth-child(2) {
+        width: 100%;
         margin-top: 50px;
+        overflow: hidden;
     }
 }
 
@@ -1148,6 +1152,10 @@ nav div {
     z-index: 0;
     opacity: 0.4;
 }
+#products .products-info-head h4{
+    width: 475px;
+    overflow: hidden;
+}
 
 .products-button button{
     background-color: #3DB9FF;
@@ -1276,7 +1284,6 @@ nav div {
     width: 1151px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 80px;
 }
 .person-container li {
     width: 287px;
@@ -1351,7 +1358,7 @@ nav div {
     width: 1151px;
     margin-left: auto;
     margin-right: auto;
-    margin: 88px 144px 0px 145px;
+    margin-top: 88px;
     overflow: hidden; 
 }
 .partners-moving {
