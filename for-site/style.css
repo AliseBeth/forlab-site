@@ -515,7 +515,7 @@ header .header-social .header-media {
     margin-top: -140px;
 }
 #factory .slides-slide-hidden-arrows {
-    animation: movingArrows 3s linear  none;
+    animation: none;
 }
 @keyframes movingArrows {
     0% {

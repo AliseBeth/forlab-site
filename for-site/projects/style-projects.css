@@ -2,18 +2,19 @@
     overflow: hidden;   
 }
 .sp-welcome-container {
-    width: 807px;
-    padding: 161px 489px 100px 144px;
+    width: 1152px;
+    padding-top: 161px;
+    padding-bottom: 80px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    display: flex;
 }
 .sp-welcome-container h4 {
     position: absolute;
     top: -80px;
     left: -50px;
     z-index: 1;
-    
     color: #3DB9FF;
     opacity: 0.4;
     
@@ -21,23 +22,30 @@
 .sp-welcome-head {
     position: relative;
     z-index: 3;
+    width: 575px;
 }
 .sp-welcome-head h1 {
     margin-left: -7px;
     background: none;
 }
 .sp-welcome-body p{
-    margin-top: 62px;
     width: 431px;
+    margin-top: 45px;
+}
+.sp-welcome-body.special-form-project {
+    margin-top: 130px;
 }
 .sp-welcome-back{
     position: absolute;
-    top: -100px;
-    left: -100px;
+    top: 30px;
+    left: -200px;
     z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 270px;
+    width: 600px;
+    overflow: hidden;
 }
 .sp-welcome-back button {
     cursor: url("../icon/cursor-finger.svg"), pointer;
@@ -50,11 +58,13 @@
     font-weight: 700;
     color: #3DB9FF;
     opacity: 0.4;
+    position: absolute;
+    left: 10px;
 }
 .sp-welcome-back:hover button{
     background-color: transparent;
     transition: 0.4s;
-    opacity: 1;
+    opacity: 0.8;
 }
 
 
