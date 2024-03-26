@@ -9,16 +9,14 @@
     position: relative;
 }
 .sp-welcome-container h4 {
-    font-size: 700px;
-    line-height: 512px;
     position: absolute;
-    top: -59px;
-    left: 97px;
+    top: -80px;
+    left: -50px;
     z-index: 1;
-    font-family: 'Comforter', 'Arial', cursive;
+    
     color: #3DB9FF;
     opacity: 0.4;
-    font-weight: 300;
+    
 }
 .sp-welcome-head {
     position: relative;
@@ -26,38 +24,38 @@
 }
 .sp-welcome-head h1 {
     margin-left: -7px;
+    background: none;
 }
 .sp-welcome-body p{
     margin-top: 62px;
     width: 431px;
-    margin-left: 576px;
 }
 .sp-welcome-back{
     position: absolute;
-    top: 32px;
-    z-index: 8;
+    top: -100px;
+    left: -100px;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .sp-welcome-back button {
-    padding: 8px 16px;
-    cursor: url("../../icon/cursor-finger.svg"), pointer;
+    cursor: url("../icon/cursor-finger.svg"), pointer;
     font-family:  'Open Sans', 'Arial', sans-serif;
-    font-size: 14px;
-    line-height: 16px;
     background-color: transparent;
     border: none;
     transition: 0.4s;
+    font-size: 448px;
+    line-height: 512px;
+    font-weight: 700;
+    color: #3DB9FF;
+    opacity: 0.4;
 }
 .sp-welcome-back:hover button{
-    background-color: #000000;
+    background-color: transparent;
     transition: 0.4s;
-    color: #ffffff;
-    transition: 0.4s;
+    opacity: 1;
 }
-
-
 
 
 
@@ -92,12 +90,13 @@
     height: 319px;
     margin-left: 1px;
     margin-bottom: 1px; 
+    cursor: url("../icon/cursor-finger.svg"), pointer;
     overflow: hidden;
     flex-grow: 1;
     transition: 0.5s;
 }
 .list-container li a {
-    cursor: url("../../icon/cursor-finger.svg"), pointer;
+    cursor: url("../icon/cursor-finger.svg"), pointer;
 }
 .list-container li:hover {
     flex-grow: 8;
@@ -108,7 +107,6 @@
     opacity: 1;
     transition: 0.5s ease-out 0.2s;
 }
-
 
 .list-text {
     width: 575px;
@@ -156,6 +154,24 @@
     opacity: 0;
 }
 
+.list-container li:nth-child(1) {
+    z-index: 1;
+}
+.list-container li:nth-child(2) {
+    z-index: 0;
+}
+.list-container li:nth-child(3) {
+    z-index: 1;
+}
+.list-container li:nth-child(4) {
+    z-index: 1;
+}
+.list-container li:nth-child(5) {
+    z-index: 2;
+}
+.list-container li:nth-child(6) {
+    z-index: 2;
+}
 
 
 .list-container li:nth-child(1):hover h3{
@@ -303,12 +319,12 @@
     margin-bottom: 61px;
     display: flex;
     position: relative;
-    cursor: url("../../icon/cursor-finger.svg"), pointer;
+    cursor: url("../icon/cursor-finger.svg"), pointer;
     overflow: hidden;
 }
 .techno-list a {
     color: #000000;
-    cursor: url("../../icon/cursor-finger.svg"), pointer;
+    cursor: url("../icon/cursor-finger.svg"), pointer;
 }
 .techno-list li h4 {
     position: absolute;
@@ -333,7 +349,7 @@
     background-color: #3DB9FF;
     border: none;
     padding: 16px 77px;
-    cursor: url("../../icon/cursor-finger.svg"), pointer;
+    cursor: url("../icon/cursor-finger.svg"), pointer;
     margin-top: 29px;
     margin-bottom: 113px;
     transition: 0.4s;

@@ -241,6 +241,9 @@ nav div {
         color: #ffffff;
     }
 }
+header .header-social .header-media {
+    display: none;
+}
 .header-social {
     margin-left: auto;
     margin-right: auto;
@@ -1487,6 +1490,9 @@ footer .moving-line {
     width: 100vw;
     left: 0;
     overflow:visible;
+}
+#footer .moving-line .moving-line-container {
+    display: none;
 }
 footer .moving-line-container {
     background-color: #000000;
