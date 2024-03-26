@@ -502,17 +502,20 @@ header .header-social .header-media {
 .slides-slide-hidden-arrows {
     position: absolute;
     bottom: -150px;
-    right: -250px;
+    right: -200px;
     animation: movingArrows 3s linear  infinite;
     height: 250px;
     overflow: hidden;
 }
 .slides-slide-hidden-arrows h4{
     color: #ffffff;
-    opacity: 0.8;
+    opacity: 0.6;
     z-index: 8; 
     transition: 0.3s;
     margin-top: -140px;
+}
+#factory .slides-slide-hidden-arrows {
+    animation: movingArrows 3s linear  none;
 }
 @keyframes movingArrows {
     0% {
@@ -527,8 +530,11 @@ header .header-social .header-media {
 }
 
 .slides-slide-hidden h2 {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     transition: 0.4s;
+    margin-top: -20px;
+}
+#factory .slides-slide li:nth-child(3) .slides-slide-hidden h2 {
     margin-top: -32px;
 }
 .slides-slide-hidden p {
@@ -632,6 +638,7 @@ header .header-social .header-media {
     top: 450px;
     left: 110px;
 }
+
 
 
 
