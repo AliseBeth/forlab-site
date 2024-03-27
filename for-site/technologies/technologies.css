@@ -79,8 +79,19 @@
     flex-direction: column;
 }
 .case-info {
-    width: 431px;
-    margin-bottom: 93px;
+    width: 543px;
+    padding: 16px;
+    padding-left: 0;
+}
+.case-text-block {
+    height: 319px;
+    width: 575px;
+}
+.case-pictures .case-text-block h3 {
+    position: relative;
+    margin: 0;
+    opacity: 1;
+    margin-bottom: 16px;
 }
 .case-pictures {
     display: flex;
@@ -154,25 +165,21 @@
     width: 543px;
     padding: 16px;
     height: 287px;
-    overflow: hidden;
-    cursor: url("../icon/cursor-finger.svg"), pointer;
 }
-.case-button:hover h4{
-    opacity: 1;
-    transition: 0.3s;
+.case-button h2 {
+    position: absolute;
+    bottom: 64px;
 }
 .case-button h4 {
-    animation: movingArrows 3s linear  infinite;
     position: absolute;
-    bottom: -150px;
-    right: -50px;
+    bottom: -82px;
+    left: -188px;
     opacity: 0.5;
     color: #3DB9FF;
     z-index: -1;
     transition: 0.3s;
 }
 .case-button p {
-    width: 255px;
     margin-top: 16px;
 }
 
@@ -184,6 +191,16 @@
     object-fit: cover;
     height: 100%;
     width: 100%;
+}
+.case-pictures h2 {
+    position: absolute;
+    width: 447px;
+    z-index: 2;
+    text-align: left;
+    opacity: 1;
+    transition: 0.3s;
+    margin-top: 16px;
+    margin-left: 16px;
 }
 .case-pictures h3 {
     position: absolute;
